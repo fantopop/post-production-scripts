@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 This script creates dictionary and writes it
-to the .json file for use by correctEDL.py script.
+to the .json file for use by correct_edl.py script.
 """
 
 
