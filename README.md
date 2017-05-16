@@ -1,8 +1,8 @@
 # post-production-scripts
 Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio post-production, including batch rename, EDL management etc.
-1. [correct_edl.py](#correct_edl.py)
-2. [rename_mixer_files.py](#rename_mixer_files.py)
-3. [Text session info to fancy EDL](#Text-session-info-to-fancy-EDL)
+1. [correct_edl.py](##correct_edl.py)
+2. [rename_mixer_files.py](##rename_mixer_files.py)
+3. [Text session info to fancy EDL](##Text-session-info-to-fancy-EDL)
 
 ## correct_edl.py
 Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the dictionary from the *.json* file. Corrected EDL is written to the new file, with *.corrected* added to the filename. Lines, starting with `*SOURCE FILE` are omitted. Main event lines are leaved unchanged.  
