@@ -29,4 +29,4 @@ It's strongly recommended to try the script without renaming, to preview what ch
 
 ## text session info to fancy edl
 Converts text file, that could be exported from Pro Tools using *Export Session Info as Text* command into pretty-looking EDL-like textfile with 3 columns: `EVENT, START, END, DURATION`.
-Script is written as IPython notebook (Jupyter) and is using [pandas](http://pandas.pydata.org) package. Sample files are provided.
+Script is written as [IPython](https://ipython.org) notebook ([Jupyter](https://jupyter.org)) and is using [pandas](http://pandas.pydata.org) package. Sample files are provided.
