@@ -30,7 +30,8 @@ Sample empty *.wav* files are provided in *files* folder.
 ```python rename_mixer_files.py [--rename] path_to_dir```
 #### Options
 * Use `--rename` option to rename files. Without this option changes are only previewed.
-* Scpecify path folder with files.  
+* Scpecify path folder with files.
+
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
 
 ## Text session info to fancy EDL
