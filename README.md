@@ -9,7 +9,9 @@ Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the diction
 Example edl's are provided in *edl* folder.
 
 #### Usage
-```python correct_edl.py [--dict dict.json] [--stat] edl```
+```python correct_edl.py [--dict dict.json] [--stat] edl```  
+The dictionary can be updated, just maintain the given in the example format:  
+```'REPLACE_THIS.MXF': 'WITH CORRECT CLIP NAME'```
 #### Options
 * You can specify dictionary file with `--dict dictfilename.json` option.
 * Use `--stat` option to print out all replacements.
