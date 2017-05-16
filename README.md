@@ -5,8 +5,8 @@ Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio
 3. tracks_to_csv.py
 
 ## correct_edl.py
-Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the dictionary from the *.json* file. Corrected EDL is written to the new file, with *.corrected* added to the filename. Lines, starting with `*SOURCE FILE` are omitted. Main event lines are leaved unchanged.  
-Example edl's are provided in *edl* folder.
+Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the dictionary from the `.json` file. Corrected EDL is written to the new file, with `.corrected` added to the filename. Lines, starting with `*SOURCE FILE` are omitted. Main event lines are leaved unchanged.  
+Example edl's are provided in `edl` folder.
 
 #### Usage
 ```python correct_edl.py [--dict dict.json] [--stat] edl```  
@@ -25,7 +25,7 @@ to:
 where `1009` - recording time, `05-5` - channel number, `160928` - shooting date.  
 
 This was done to group files by takes (recording time).  
-Sample empty *.wav* files are provided in *files* folder.
+Sample empty `.wav` files are provided in `files` folder.
 #### Usage
 ```python rename_mixer_files.py [--rename] path_to_dir```
 #### Options
@@ -35,11 +35,15 @@ Sample empty *.wav* files are provided in *files* folder.
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
 
 ## tracks_to_csv.py
-This scripts converts *.txt* file, that could be exported from Pro Tools using "Export Session Info as Text" command into *.csv* file.
+This scripts converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.csv` file.
 This CSV file can be easily opened with Numbers.app or Excel.
+#### Usage
+```python tracks_to_csv.py [--tracks] input.txt```
 
+#### Options
 There are two formats available:
-1. With TRACK_NAME column as one table.  
+1. With TRACK_NAME column as one table.
+
 | TRACK_NAME 	| EVENT 	| CLIP_NAME     	| START       	| END         	| DURATION    	|
 |------------	|-------	|---------------	|-------------	|-------------	|-------------	|
 | JOHN       	| 1     	| TOO NOISY     	| 01:03:28:04 	| 01:03:46:03 	| 00:00:17:24 	|
@@ -47,7 +51,8 @@ There are two formats available:
 | MARY       	| 1     	| OUTDOOR NOISE 	| 01:16:18:01 	| 01:16:21:13 	| 00:00:03:12 	|
 | MARY       	| 2     	| OUTDOOR NOISE 	| 01:18:48:17 	| 01:18:49:23 	| 00:00:01:06 	|
 | MARY       	| 3     	| NOT SURE???   	| 03:00:00:00 	| 03:01:28:08 	| 00:01:28:08 	|
-2. Grouped by TRACK NAME with [--tracks] option.  
+2. Grouped by TRACK NAME with `[--tracks]` option.
+
 | TRACK NAME: 	| JOHN          	| START       	| END         	| DURATION    	|
 |-------------	|---------------	|-------------	|-------------	|-------------	|
 | 1           	| TOO NOISY     	| 01:00:11:18 	| 01:01:22:05 	| 00:01:10:11 	|
