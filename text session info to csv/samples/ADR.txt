@@ -1,0 +1,272 @@
+SESSION NAME:	GWS DX
+SAMPLE RATE:	48000.000000
+BIT DEPTH:	24-bit
+SESSION START TIMECODE:	00:00:00:00
+TIMECODE FORMAT:	25 Frame
+# OF AUDIO TRACKS:	86
+# OF AUDIO CLIPS:	9080
+# OF AUDIO FILES:	2033
+
+
+T R A C K  L I S T I N G
+TRACK NAME:	РАССКАЗЧИК
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	РАССКАЗЧИК                    	   01:00:11:18	   01:01:22:05	   00:01:10:11	Unmuted
+1       	2       	РАССКАЗЧИК                    	   05:11:28:07	   05:11:48:19	   00:00:20:12	Unmuted
+
+
+TRACK NAME:	ЖЕНЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ЖЕНЯ                          	   01:03:28:04	   01:03:46:03	   00:00:17:24	Unmuted
+1       	2       	ЖЕНЯ                          	   01:09:00:07	   01:09:50:24	   00:00:50:17	Unmuted
+1       	3       	ЖЕНЯ                          	   05:01:56:13	   05:02:32:17	   00:00:36:04	Unmuted
+1       	4       	ЖЕНЯ                          	   05:06:39:17	   05:07:32:06	   00:00:52:14	Unmuted
+1       	5       	ЖЕНЯ                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	6       	ЖЕНЯ                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ОКСАНА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ОКСАНА                        	   01:16:18:01	   01:16:21:13	   00:00:03:12	Unmuted
+1       	2       	ОКСАНА ???                    	   01:18:48:17	   01:18:49:23	   00:00:01:06	Unmuted
+1       	3       	ОКСАНА                        	   03:00:00:00	   03:01:28:08	   00:01:28:08	Unmuted
+1       	4       	091____01T004_-01.A2          	   05:01:56:10	   05:01:56:13	   00:00:00:03	Unmuted
+1       	5       	ОКСАНА                        	   05:01:56:13	   05:02:32:17	   00:00:36:04	Unmuted
+1       	6       	ОКСАНА                        	   05:06:39:17	   05:07:32:06	   00:00:52:14	Unmuted
+1       	7       	ОКСАНА                        	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	8       	ОКСАНА                        	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ПАША
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ПАША                          	   01:03:28:04	   01:03:46:03	   00:00:17:24	Unmuted
+1       	2       	ПАША ???                      	   01:15:50:16	   01:15:56:00	   00:00:05:09	Unmuted
+1       	3       	ПАША                          	   02:01:54:21	   02:02:11:23	   00:00:17:02	Unmuted
+1       	4       	ПАША !!!!!!                   	   02:08:27:09	   02:08:29:16	   00:00:02:07	Unmuted
+1       	5       	ПАША                          	   04:07:55:04	   04:08:07:02	   00:00:11:22	Unmuted
+1       	6       	ПАША                          	   04:15:41:04	   04:16:59:00	   00:01:17:21	Unmuted
+1       	7       	ПАША                          	   05:07:19:15	   05:07:32:06	   00:00:12:15	Unmuted
+1       	8       	ПАША                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	9       	ПАША                          	   05:09:44:07	   05:09:51:19	   00:00:07:12	Unmuted
+1       	10      	ПАША                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	АСЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	АСЯ                           	   01:03:57:15	   01:04:47:03	   00:00:49:13	Unmuted
+1       	2       	АСЯ                           	   01:05:09:17	   01:05:11:21	   00:00:02:04	Unmuted
+1       	3       	АСЯ                           	   01:12:20:11	   01:12:23:20	   00:00:03:09	Unmuted
+1       	4       	АСЯ                           	   02:09:53:09	   02:11:26:17	   00:01:33:08	Unmuted
+1       	5       	АСЯ                           	   03:11:50:11	   03:11:52:10	   00:00:01:24	Unmuted
+1       	6       	АСЯ                           	   04:04:49:18	   04:04:59:03	   00:00:09:10	Unmuted
+1       	7       	АСЯ                           	   04:06:27:00	   04:07:31:02	   00:01:04:02	Unmuted
+1       	8       	АСЯ                           	   04:09:50:04	   04:10:54:18	   00:01:04:14	Unmuted
+1       	9       	АСЯ                           	   04:16:59:00	   04:17:05:17	   00:00:06:17	Unmuted
+1       	10      	АСЯ                           	   05:09:17:21	   05:09:34:20	   00:00:16:24	Unmuted
+
+
+TRACK NAME:	БОРЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	БОРЯ                          	   01:07:07:02	   01:07:39:02	   00:00:32:00	Unmuted
+1       	2       	БОРЯ (можно наверное оставить)	   01:07:39:02	   01:07:48:20	   00:00:09:18	Unmuted
+1       	3       	БОРЯ                          	   01:08:06:16	   01:08:19:01	   00:00:12:10	Unmuted
+1       	4       	БОРЯ                          	   05:02:32:17	   05:03:30:18	   00:00:58:01	Unmuted
+1       	5       	БОРЯ                          	   05:05:40:08	   05:06:39:17	   00:00:59:09	Unmuted
+1       	6       	БОРЯ                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	7       	БОРЯ                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ГАЛИНА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ГАЛИНА                        	   03:00:00:00	   03:01:28:08	   00:01:28:08	Unmuted
+1       	2       	ГАЛИНА                        	   05:00:00:00	   05:01:56:10	   00:01:56:10	Unmuted
+1       	3       	ГАЛИНА                        	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	4       	ГАЛИНА                        	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	КОЛЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	КОЛЯ                          	   01:13:40:13	   01:15:01:08	   00:01:20:20	Unmuted
+1       	2       	КОЛЯ                          	   01:15:01:08	   01:15:35:08	   00:00:34:00	Unmuted
+1       	3       	КОЛЯ                          	   02:06:01:08	   02:06:33:04	   00:00:31:21	Unmuted
+1       	4       	КОЛЯ                          	   02:16:43:14	   02:18:37:24	   00:01:54:10	Unmuted
+1       	5       	КОЛЯ                          	   03:03:51:19	   03:04:18:24	   00:00:27:05	Unmuted
+1       	6       	КОЛЯ                          	   03:09:57:00	   03:10:07:03	   00:00:10:03	Unmuted
+1       	7       	КОЛЯ                          	   04:02:49:17	   04:03:03:03	   00:00:13:11	Unmuted
+1       	8       	??? КОЛЯ ???                  	   04:03:05:14	   04:04:28:16	   00:01:23:02	Unmuted
+1       	9       	КОЛЯ                          	   04:12:16:07	   04:12:29:13	   00:00:13:06	Unmuted
+1       	10      	КОЛЯ                          	   05:00:00:00	   05:01:56:10	   00:01:56:10	Unmuted
+1       	11      	КОЛЯ                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	12      	КОЛЯ                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	СМЕРТЬ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	СМЕРТЬ                        	   01:07:48:20	   01:08:06:16	   00:00:17:21	Unmuted
+1       	2       	СМЕРТЬ                        	   01:11:38:09	   01:12:09:15	   00:00:31:06	Unmuted
+1       	3       	СМЕРТЬ                        	   02:13:47:17	   02:15:06:14	   00:01:18:22	Unmuted
+1       	4       	СМЕРТЬ                        	   03:15:55:06	   03:16:44:11	   00:00:49:05	Unmuted
+1       	5       	СМЕРТЬ                        	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	6       	СМЕРТЬ                        	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ДИМА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ДИМА                          	   03:06:19:03	   03:07:45:14	   00:01:26:11	Unmuted
+1       	2       	ДИМА                          	   03:14:08:18	   03:15:30:16	   00:01:21:23	Unmuted
+1       	3       	ДИМА.grp                      	   04:08:07:02	   04:08:20:07	   00:00:13:05	Unmuted
+1       	4       	ДИМА                          	   04:08:20:07	   04:08:29:10	   00:00:09:03	Unmuted
+1       	5       	ДИМА                          	   04:09:50:04	   04:10:54:18	   00:01:04:14	Unmuted
+1       	6       	ДИМА                          	   04:16:59:00	   04:17:27:03	   00:00:28:03	Unmuted
+1       	7       	ДИМА                          	   05:05:28:10	   05:05:50:09	   00:00:21:24	Unmuted
+1       	8       	ДИМА                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	9       	ДИМА                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	АЛЕНА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	АЛЕНА                         	   01:10:37:00	   01:10:38:04	   00:00:01:03	Unmuted
+1       	2       	АЛЕНА                         	   03:06:19:03	   03:07:45:14	   00:01:26:11	Unmuted
+1       	3       	АЛЕНА                         	   03:14:08:18	   03:15:30:16	   00:01:21:23	Unmuted
+1       	4       	АЛЕНА.grp                     	   04:08:07:02	   04:08:20:07	   00:00:13:05	Unmuted
+1       	5       	АЛЕНА                         	   04:08:20:07	   04:08:29:10	   00:00:09:03	Unmuted
+1       	6       	АЛЕНА                         	   04:09:50:04	   04:10:54:18	   00:01:04:14	Unmuted
+1       	7       	АЛЕНА                         	   04:16:59:00	   04:17:27:03	   00:00:28:03	Unmuted
+1       	8       	АЛЕНА                         	   05:05:28:10	   05:05:50:09	   00:00:21:24	Unmuted
+1       	9       	АЛЕНА                         	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	10      	АЛЕНА                         	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ДИСПЕТЧЕР
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ДИСПЕТЧЕР                     	   01:12:23:19	   01:13:40:13	   00:01:16:19	Unmuted
+1       	2       	ДИСПЕТЧЕР                     	   05:02:32:17	   05:03:30:18	   00:00:58:01	Unmuted
+1       	3       	ДИСПЕТЧЕР                     	   05:05:28:10	   05:06:39:17	   00:01:11:07	Unmuted
+1       	4       	ДИСПЕТЧЕР                     	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	5       	ДИСПЕТЧЕР                     	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ГЕНА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ГЕНА                          	   02:13:24:11	   02:13:26:18	   00:00:02:07	Unmuted
+1       	2       	ГЕНА                          	   04:12:16:07	   04:12:29:13	   00:00:13:06	Unmuted
+1       	3       	ГЕНА                          	   04:12:29:13	   04:14:53:04	   00:02:23:16	Unmuted
+1       	4       	ГЕНА                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	5       	ГЕНА                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ВИТЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ВИТЯ                          	   04:12:29:13	   04:14:53:04	   00:02:23:16	Unmuted
+1       	2       	ВИТЯ                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	3       	ВИТЯ                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ЛЕНА
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ЛЕНА                          	   04:12:29:13	   04:14:53:04	   00:02:23:16	Unmuted
+1       	2       	ЛЕНА                          	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	3       	ЛЕНА                          	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	ДЯДЯ
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ДЯДЯ ???                      	   04:16:05:11	   04:16:14:20	   00:00:09:09	Unmuted
+1       	2       	ДЯДЯ                          	   04:16:47:20	   04:16:59:00	   00:00:11:05	Unmuted
+
+
+TRACK NAME:	EP 1
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ОХРАННИК                      	   01:09:42:04	   01:09:50:24	   00:00:08:20	Unmuted
+1       	2       	БАБКА                         	   01:11:38:09	   01:12:09:15	   00:00:31:06	Unmuted
+1       	3       	ПРОДАВЩИЦА                    	   01:13:40:13	   01:15:01:08	   00:01:20:20	Unmuted
+1       	4       	ЖЕНЩИНА                       	   02:13:47:17	   02:15:06:14	   00:01:18:22	Unmuted
+1       	5       	МАЛЬЧИК                       	   03:15:55:06	   03:16:44:11	   00:00:49:05	Unmuted
+1       	6       	ДЕД МОРОЗ                     	   04:15:41:04	   04:16:59:00	   00:01:17:21	Unmuted
+1       	7       	ФЕЛЬДШЕР 1                    	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	8       	ФЕЛЬДШЕР 1                    	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	EP 2
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ВОР ГОРОШКА                   	   01:14:46:21	   01:14:56:10	   00:00:09:14	Unmuted
+1       	2       	ВОР ГОРОШКА                   	   01:15:22:04	   01:15:28:20	   00:00:06:16	Unmuted
+1       	3       	ВОДИТЕЛЬ                      	   02:02:11:23	   02:02:43:24	   00:00:32:01	Unmuted
+1       	4       	ПАПА                          	   03:15:55:06	   03:16:44:11	   00:00:49:05	Unmuted
+1       	5       	ПОЛИЦЕЙСКИЙ                   	   04:15:41:04	   04:16:59:00	   00:01:17:21	Unmuted
+1       	6       	ФЕЛЬДШЕР 2                    	   05:07:32:06	   05:09:17:21	   00:01:45:15	Unmuted
+1       	7       	ФЕЛЬДШЕР 2                    	   05:10:03:15	   05:11:40:08	   00:01:36:18	Unmuted
+
+
+TRACK NAME:	EP 3
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ДЕВОЧКА                       	   03:15:55:06	   03:16:44:11	   00:00:49:05	Unmuted
+1       	2       	064____01T003-07.A1           	   03:16:44:11	   03:16:44:11	   00:00:00:00	Unmuted
+
+
+TRACK NAME:	GUR 1
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: Inactive 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	ДЯДЯ                          	   01:07:48:20	   01:08:06:16	   00:00:17:21	Unmuted
+1       	2       	GUR                           	   02:02:11:23	   02:02:43:24	   00:00:32:01	Unmuted
+
+

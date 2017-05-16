@@ -40,6 +40,22 @@ def read_dict(dict_filename):
     return d
 
 
+def get_output_filename(input_filename):
+    """
+    Constructs output filename from input file,
+    adding '.corrected' between filename and extension.
+    Example:
+    input.txt >>> input.corrected.txt
+    """
+    split = input_filename.split('.')
+    l = len(split)
+    if l > 1:
+        output = '.'.join(split[0:l-1] + ['corrected', split[l-1]])
+    else:
+        output = input_filename + '.corrected'
+    return output
+
+
 def correct(inputfile, outputfile, dictionary, print_statistics=False):
     """
     Reads input file line by line and writes them into output file,
@@ -110,13 +126,7 @@ def main():
         sys.exit(1)
 
     # Constructing name for the corrected file.
-    split = filename.split('.')
-    l = len(split)
-    if l > 1:
-        output = '.'.join(split[0:l-1] + ['corrected', split[l-1]])
-    else:
-        output = filename + '.corrected'
-
+    output = get_output_filename(filename)
     output_edl = open(output, 'w')
 
     # Printing settings.
