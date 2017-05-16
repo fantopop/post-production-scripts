@@ -1,9 +1,13 @@
 # post-production-scripts
 Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio post-production, including batch rename, EDL management etc.
+1. [correct_edl.py](#correct_edl.py)
+2. [rename_mixer_files.py](#rename_mixer_files.py)
+3. [Text session info to fancy EDL](#Text-session-info-to-fancy-EDL)
 
 ## correct_edl.py
 Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the dictionary from the *.json* file. Corrected EDL is written to the new file, with *.corrected* added to the filename. Lines, starting with `*SOURCE FILE` are omitted. Main event lines are leaved unchanged.  
 Example edl's are provided in *edl* folder.
+
 #### Usage
 ```python correct_edl.py [--dict dict.json] [--stat] edl```
 #### Options
@@ -27,6 +31,6 @@ Sample empty *.wav* files are provided in *files* folder.
 * Scpecify path folder with files.
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
 
-## text session info to fancy edl
+## Text session info to fancy EDL
 Converts text file, that could be exported from Pro Tools using *Export Session Info as Text* command into pretty-looking EDL-like textfile with 3 columns: `EVENT, START, END, DURATION`.
 Script is written as [IPython](https://ipython.org) notebook ([Jupyter](https://jupyter.org)) and is using [pandas](http://pandas.pydata.org) package. Sample files are provided.
