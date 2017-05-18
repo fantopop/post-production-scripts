@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/ python
 """
 This scripts converts .txt file, that could be exported from Pro Tools
 using "Export Session Info as Text" command into .csv file.
@@ -9,9 +9,8 @@ There are two formats available:
     - grouped by TRACK NAME with [--tracks] option.
 """
 
-import sys
+import sys, csv, argparse
 from os import path
-import csv
 
 # Field names in output file.
 track_name = 'TRACK_NAME'
@@ -24,44 +23,28 @@ duration = 'DURATION'
 sep = '\t'
 
 
-def get_output_filename(input_filename):
+def outname(filename):
     """
     Constructs output filename from input file,
     replacing extension with '.csv'.
     Example:
     input.txt >>> input.csv
     """
-    split = (path.basename(input_filename)).split('.')
+    split = (path.basename(filename)).split('.')
     l = len(split)
     if l > 1:
         output = '.'.join(split[0:l-1] + ['csv'])
     else:
-        output = input_filename + '.csv'
-    return output
+        output = filename + '.csv'
+    return path.join(path.dirname(filename), output)
 
 
-def tracks_to_csv(filename, track_column):
-    # Open input file.
-    try:
-        inputfile = open(filename, mode='rU')
-    except IOError:
-        print('File not found.')
-        sys.exit(1)
-
-    # Open output file.
-    todir = path.dirname(filename)
-    output_filename = path.join(todir, get_output_filename(filename))
-    try:
-        outputfile = open(output_filename, mode='w')
-    except IOError:
-        print('Can\'t create output file.')
-        sys.exit(1)
-
+def tracks_to_csv(inputfile, outputfile, tracks):
     csv_reader = csv.reader(inputfile, dialect='excel-tab')
     csv_writer = csv.writer(outputfile, dialect='excel-tab')
 
     # Make header.
-    if track_column:
+    if not tracks:
         header = [track_name, event, clip_name, start_tc, end_tc, duration]
         csv_writer.writerow(header)
 
@@ -72,46 +55,38 @@ def tracks_to_csv(filename, track_column):
             row = [cell.strip() for cell in raw_row]
             # Get track name.
             if row[0].startswith('TRACK NAME:'):
-                if track_column:
-                    track = row[1]
-                else:
+                if tracks:
                     csv_writer.writerow(['', '', '', '', ''])
                     header = row + [start_tc, end_tc, duration]
                     csv_writer.writerow(header)
+                else:
+                    track = row[1]
                 continue
             # Skip original header lines.
             if row[0].startswith('CHANNEL'):
                 continue
             if len(row) > 2:
-                if track_column:
-                    csv_writer.writerow([track] + row[1:6])
-                else:
+                if tracks:
                     csv_writer.writerow(row[1:6])
-    inputfile.close()
-    outputfile.close()
+                else:
+                    csv_writer.writerow([track] + row[1:6])
 
 
 def main():
-    # Parsing command line arguments.
-    args = sys.argv[1:]
-    if not args or args[0] in ['-h', '--help']:
-        print('Usage: python tracks_to_csv.py [--tracks] input.txt')
-        print('Use [--tracks] option group by without TRACK_NAME column.')
-        print('New file is written next to input file.')
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Converts '.txt' file from Pro Tools 'Export Session Info as Text' command to '.csv' file")
+    parser.add_argument(
+        'txt', metavar='textfile', type=argparse.FileType(mode='r'),
+        help='session info text file from Pro Tools')
+    parser.add_argument(
+        '-t', '--tracks', action='store_true',
+        help='skip TRACK_NAME column, group by tracks instead')
+    args = parser.parse_args()
 
-    # Check for tracks option.
-    track_column = True
-    if args[0] == '--tracks':
-        track_column = False
-        del args[0]
+    with open(outname(args.txt.name), 'w') as csv:
+        tracks_to_csv(args.txt, csv, args.tracks)
 
-    if len(args) == 0:
-        print('Invalid arguments.')
-        sys.exit(1)
-
-    filename = args[0]
-    tracks_to_csv(filename, track_column)
+    args.txt.close()
 
 
 if __name__ == '__main__':
