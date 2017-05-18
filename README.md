@@ -38,7 +38,19 @@ It's strongly recommended to try the script without renaming, to preview what ch
 This scripts converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.csv` file.
 This CSV file can be easily opened with Numbers.app or Excel.
 #### Usage
-```python tracks_to_csv.py [--tracks] input.txt```
+```
+usage: tracks_to_csv.py [-h] [-t] textfile
+
+Converts '.txt' file from Pro Tools 'Export Session Info as Text' command to
+'.csv' file
+
+positional arguments:
+  textfile      session info text file from Pro Tools
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -t, --tracks  skip TRACK_NAME column, group by tracks instead
+```
 
 #### Options
 There are two formats available:
