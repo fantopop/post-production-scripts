@@ -10,8 +10,8 @@ from_clip_name = '*FROM CLIP NAME:  '
 source_file = '*SOURCE FILE: '
 
 
-import sys
-import json
+import sys, json, argparse
+from os import path
 
 
 def print_separator():
@@ -25,35 +25,20 @@ def print_dict(d):
     print()
 
 
-def read_dict(dict_filename):
-    """
-    Reads replacements dictionary from dict_filename
-    and returns it as a dict object.
-    """
-    try:
-        f = open(dict_filename, 'r')
-        d = json.load(f)
-        f.close()
-    except IOError:
-        sys.stderr.write('Dictionary file not found.\n')
-        sys.exit(1)
-    return d
-
-
-def get_output_filename(input_filename):
+def outname(filename):
     """
     Constructs output filename from input file,
     adding '.corrected' between filename and extension.
     Example:
     input.txt >>> input.corrected.txt
     """
-    split = input_filename.split('.')
+    split = (path.basename(filename)).split('.')
     l = len(split)
     if l > 1:
         output = '.'.join(split[0:l-1] + ['corrected', split[l-1]])
     else:
-        output = input_filename + '.corrected'
-    return output
+        output = filename + '.corrected'
+    return path.join(path.dirname(filename), output)
 
 
 def correct(inputfile, outputfile, dictionary, print_statistics=False):
@@ -92,59 +77,42 @@ def correct(inputfile, outputfile, dictionary, print_statistics=False):
 
 def main():
     # Parsing command line arguments.
-    args = sys.argv[1:]
-    if not args:
-        print('Usage: python correct_edl.py [--dict dict.json] [--stat] edl')
-        print('Corrected EDL will be written to a new file.')
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description='Replaces strings in *FROM CLIP NAME field of the EDL, accroding to the dictionary from the .json file')
+    parser.add_argument(
+        'edl', type=argparse.FileType(mode='r'),
+        help='source EDL file')
+    parser.add_argument(
+        '-d', '--dict', type=argparse.FileType(mode='r'),
+        default='replacements_dict.json',
+        help='replacements dictionary in JSON format, \'replacements_dict.json\' is used, if not specified')
+    parser.add_argument(
+        '-s', '--stat', action='store_true',
+        help='print detailed replacements statistics')
 
-    # Get dictionary filename, if provided.
-    # If not - use the default one.
-    dict_filename = 'replacements_dict.json'
-    if args[0] == '--dict':
-        dict_filename = args[1]
-        del args[0:2]
-
-    # Read dictionary from file.
-    replacements_dict = read_dict(dict_filename)
-
-    # Read print_statistics parameter, if provided.
-    # If not - use default value.
-    print_statistics = False
-    if args[0] == '--stat':
-        print_statistics = True
-        del args[0]
-
-    # Get filename from the first arbitary argument.
-    filename = args[0]
-
-    # Try to read the input edl.
-    try:
-        input_edl = open(filename, 'r')
-    except IOError:
-        print('Input file not found.')
-        sys.exit(1)
+    args = parser.parse_args()
 
     # Constructing name for the corrected file.
-    output = get_output_filename(filename)
-    output_edl = open(output, 'w')
+    output = outname(args.edl.name)
+
+    # Read dictionary from file.
+    replacements_dict = json.load(args.dict)
+    args.dict.close()
 
     # Printing settings.
     print_separator()
-    print('Input file: %s' % filename)
+    print('Input EDL: %s' % args.edl.name)
     print('Output filename: %s' % output)
-    print('Replacements dictionary: %s' % dict_filename)
-    print('Print statistics: %s' % print_statistics)
+    print('Replacements dictionary: %s' % args.dict.name)
+    print('Print statistics: %s' % args.stat)
     print_separator()
 
-    # Correct EDL and get replacements count.
-    count = correct(input_edl, output_edl, replacements_dict, print_statistics)
+    with open(output, 'w') as output_edl:
+        count = correct(args.edl, output_edl, replacements_dict, args.stat)
 
-    # Clean-up.
-    input_edl.close()
-    output_edl.close()
+    # Cleanup and result.
+    args.edl.close()
     print('\n%d events corrected.\n' % count)
-    return 0
 
 
 if __name__ == '__main__':
