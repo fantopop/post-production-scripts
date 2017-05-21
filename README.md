@@ -28,7 +28,7 @@ The dictionary can be updated, just maintain the given in the example format:
 ```
 'REPLACE_THIS.MXF': 'WITH CORRECT CLIP NAME'
 'AND_REPLACE_THIS.MXF': 'WITH ANOTHER CLIP NAME'
-etc...
+...
 ```
 #### Options
 * You can specify dictionary file with `-d DICT` option.
