@@ -9,13 +9,30 @@ Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the diction
 Example edl's are provided in `edl` folder.
 
 #### Usage
-```python correct_edl.py [--dict dict.json] [--stat] edl```  
+```
+usage: correct_edl.py [-h] [-d DICT] [-s] edl
+
+Replaces strings in *FROM CLIP NAME field of the EDL, accroding to the
+dictionary from the .json file
+
+positional arguments:
+  edl                   source EDL file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DICT, --dict DICT  replacements dictionary in JSON format,
+                        'replacements_dict.json' is used, if not specified
+  -s, --stat            print detailed replacements statistics
+```  
 The dictionary can be updated, just maintain the given in the example format:  
-```'REPLACE_THIS.MXF': 'WITH CORRECT CLIP NAME'```
+```
+'REPLACE_THIS.MXF': 'WITH CORRECT CLIP NAME'
+'AND_REPLACE_THIS.MXF': 'WITH ANOTHER CLIP NAME'
+etc...
+```
 #### Options
-* You can specify dictionary file with `--dict dictfilename.json` option.
-* Use `--stat` option to print out all replacements.
-* Path to original edl is passed after all options.
+* You can specify dictionary file with `-d DICT` option.
+* Use `-s` option to print out all replacements.
 
 ## rename_mixer_files.py
 Batch rename files from format:  
@@ -27,10 +44,23 @@ where `1009` - recording time, `05-5` - channel number, `160928` - shooting date
 This was done to group files by takes (recording time).  
 Sample empty `.wav` files are provided in `files` folder.
 #### Usage
-```python rename_mixer_files.py [--rename] path_to_dir```
+```
+usage: rename_mixer_files.py [-h] [-r] path
+
+rename files from '05-5-160928_1009.wav' to '1009_05-5-160928.wav, ' where
+1009 - recording time, 05-5 - channel number, 160928 - date
+
+positional arguments:
+  path          path to the folder with files to be renamed
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -r, --rename  run script without this option to preview results
+
+Warning: Always backup files before renaming!
+```
 #### Options
-* Use `--rename` option to rename files. Without this option changes are only previewed.
-* Scpecify path folder with files.
+* Use `-r` option to rename files. Without this option changes are previewed only.
 
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
 
