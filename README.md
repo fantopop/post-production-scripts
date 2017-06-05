@@ -3,7 +3,7 @@ Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio
 1. [correct_edl.py](#correct_edlpy)
 2. [rename_mixer_files.py](#rename_mixer_filespy)
 3. [tracks_to_csv.py](#tracks_to_csvpy)  
-4. [Send to RX & Back to Pro Tools](#Send-to-RX-Back-to-Pro-Tools)
+4. [Send to RX](#Send-to-RX)
 
 ## How to use scripts (macOS):
 1. Download `.py` file (and other files if neccessary).
@@ -115,5 +115,5 @@ There are two formats available:
 | 2           	| NOT SURE???   	| 01:09:00:07 	| 01:09:50:24 	| 00:00:50:17 	|
 | 3           	| TOO NOISY     	| 05:01:56:13 	| 05:02:32:17 	| 00:00:36:04 	|
 
-## Send to RX & Back to Pro Tools
+## Send to RX
 These scripts alow to make a selection in Pro Tools and send it to iZotope Audio Editor, and after editing, send it back to Pro Tools and render. You can configure Apple Service for Send to RX script to assign a shortcut. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) is a good step-by-step instructions for configuring Service. It seems that Services are not supported in iZopope RX Audio Editor, so for Back to Pro Tools script [FastScripts](https://red-sweater.com/fastscripts/) app can be used for assigning a shortcut.
