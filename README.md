@@ -3,7 +3,7 @@ Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio
 1. [correct_edl.py](#correct_edlpy)
 2. [rename_mixer_files.py](#rename_mixer_filespy)
 3. [tracks_to_csv.py](#tracks_to_csvpy)  
-4. [Send to RX & Back to Pro Tools] (#send-to-rx-&-back-to-pro-tools)
+4. [Send to RX & Back to Pro Tools](#sendtorx&backtoprotools)
 
 ## How to use scripts (macOS):
 1. Download `.py` file (and other files if neccessary).
