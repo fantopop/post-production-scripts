@@ -4,6 +4,7 @@ Collection of AppleScripts and Python (compatible with Python2.7 and Python3.x) 
 2. [rename_mixer_files.py](#rename_mixer_filespy)
 3. [tracks_to_csv.py](#tracks_to_csvpy)  
 4. [Send to RX](#send-to-rx)
+5. [Suspend Automation](#suspend-automation)
 
 ## How to use scripts (macOS):
 1. Download `.py` file (and other files if neccessary).
@@ -116,4 +117,9 @@ There are two formats available:
 | 3           	| TOO NOISY     	| 05:01:56:13 	| 05:02:32:17 	| 00:00:36:04 	|
 
 ## Send to RX
-These scripts alow to make a selection in Pro Tools and send it to iZotope Audio Editor, and after editing, send it back to Pro Tools and render. You can configure Apple Service for Send to RX script to assign a shortcut. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) is a good step-by-step instructions for configuring Service. It seems that Services are not supported in iZopope RX Audio Editor, so for Back to Pro Tools script [FastScripts](https://red-sweater.com/fastscripts/) app can be used for assigning a shortcut.
+These scripts alow to make a selection in Pro Tools and send it to iZotope Audio Editor, and after editing, send it back to Pro Tools and render. You can configure Apple Service for Send to RX script to assign a shortcut. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) is a good step-by-step instructions for configuring Service. It seems that Services are not supported in iZopope RX Audio Editor, so for Back to Pro Tools script [FastScripts](https://red-sweater.com/fastscripts/) app can be used for assigning a shortcut.  
+#### Modification
+In this repository the scripts are written to communicate with iZotope RX 6, but this can be easily fixed to work with RX 5 (or RX 4), just replace `RX 6 Connect`, `iZotope RX 6 Audio Editor` and `iZotope RX 6` with yours RX version.
+
+## Suspend Automation
+If installed as Service, this script allows to enable/disable Suspend Automation with one shortcut. Apparently can be applied to toggle Preview automation mode, with slight modifications to the script body.
