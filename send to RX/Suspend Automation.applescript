@@ -1,10 +1,10 @@
 tell application "System Events"
 	tell process "Pro Tools"
 		-- check if Automation window is open
-		set auto_open to count (windows whose name is "")
+		set isOpen to count (windows whose name is "")
 		
 		-- open Automation window if needed
-		if auto_open is 0 then
+		if isOpen is 0 then
 			my openAutomation()
 		else
 			-- make Automation window the frontmost if needed
