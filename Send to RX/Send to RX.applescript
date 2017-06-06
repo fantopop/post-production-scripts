@@ -11,7 +11,7 @@ tell application "System Events"
 		end if
 		
 		-- click SEND button
-		tell (1st window whose name contains "Audio Suite") to click button "Analyze"
+		tell (1st window whose name contains "Audio Suite: RX Connect") to click button "Analyze"
 		
 	end tell
 end tell
