@@ -1,5 +1,5 @@
 # post-production-scripts
-Collection of Python (compatible with Python2.7 and Python3.x) scripts for audio post-production, including batch rename, EDL management etc.
+Collection of AppleScripts and Python (compatible with Python2.7 and Python3.x) scripts for audio post-production, including batch rename, EDL management, shortcuts for Pro Tools etc.
 1. [correct_edl.py](#correct_edlpy)
 2. [rename_mixer_files.py](#rename_mixer_filespy)
 3. [tracks_to_csv.py](#tracks_to_csvpy)  
