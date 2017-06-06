@@ -7,8 +7,8 @@ tell application "System Events"
 		if auto_open is 0 then
 			my openAutomation()
 		else
-			set theWindow to the first item of Â
-				(get the windows whose name is "")
+			-- make Automation window the frontmost if needed
+			set theWindow to the first item of (get the windows whose name is "")
 			if theWindow is not window 1 then
 				my openAutomation()
 			end if
