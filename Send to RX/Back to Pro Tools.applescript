@@ -9,9 +9,9 @@ tell application "System Events"
 	
 	tell process "Pro Tools"
 		-- Render
-		tell (1st window whose name contains "Audio Suite") to click button "Render"
+		tell (1st window whose name contains "Audio Suite: RX Connect") to click button "Render"
 		delay 0.5
 		-- Close window
-		tell (1st window whose name contains "Audio Suite") to click button 1
+		tell (1st window whose name contains "Audio Suite: RX Connect") to click button 1
 	end tell
 end tell
