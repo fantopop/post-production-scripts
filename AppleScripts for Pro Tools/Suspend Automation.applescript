@@ -1,28 +1,27 @@
 tell application "System Events"
 	tell process "Pro Tools"
-		-- check if Automation window is open
-		set isOpen to count (windows whose name is "")
+		-- Get list of all floating windows without title.
+		-- If Automation window is open, it should be among them.
+		set allWindows to (get the windows whose name is "")
 		
-		-- open Automation window if needed
-		if isOpen is 0 then
-			my openAutomation()
-		else
-			-- make Automation window the frontmost if needed
-			set theWindow to the first item of (get the windows whose name is "")
-			if theWindow is not window 1 then
-				my openAutomation()
-			end if
+		if length of allWindows is greater than 0 then
+			-- Search within windows without title.
+			repeat with currentWindow in allWindows
+				-- Automation window can be determined by presence of Suspend Automation button.
+				set isAutomationWindow to count (buttons of currentWindow whose title contains "Suspend Automation")
+				if isAutomationWindow is greater than 0 then
+					-- Click and exit the script.
+					click button "Suspend Automation" of currentWindow
+					return
+				end if
+			end repeat
 		end if
 		
-		-- click
-		click button "Suspend Automation" of window 1
+		-- If there is no open windows without title, or window not found,
+		-- open Automation window.
+		click menu item "Automation" of menu "Window" of menu bar item "Window" of menu bar 1
+		-- Click.
+		tell (1st window whose name is "") to click button "Suspend Automation"
+		
 	end tell
 end tell
-
-on openAutomation()
-	tell application "System Events"
-		tell process "Pro Tools"
-			click menu item "Automation" of menu "Window" of menu bar item "Window" of menu bar 1
-		end tell
-	end tell
-end openAutomation
