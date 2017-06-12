@@ -3,7 +3,8 @@
 --
 -- Script description:
 -- 1. Clicks on the render button of an Audio Suite plug-in if there is an open one.
--- 2. Creates fades around the selection.
+-- 2. Waits for render to complete.
+-- 3. Creates fades around the selection.
 --
 -- (C) 2017 Ilya Putilin
 -- http://github.com/fantopop
