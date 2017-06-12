@@ -22,7 +22,7 @@ end tell
 on openAutomation()
 	tell application "System Events"
 		tell process "Pro Tools"
-			click menu item "Automation" of menu "Window" of menu bar 1
+			click menu item "Automation" of menu "Window" of menu bar item "Window" of menu bar 1
 		end tell
 	end tell
 end openAutomation
