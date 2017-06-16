@@ -2,7 +2,7 @@
 -- AppleScripts for Avid Pro Tools.
 --
 -- Script description:
--- 1. Sends audio back to Pro Tools.
+-- 1. Sends audio from iZotope RX Audio Editor back to Pro Tools.
 -- 2. Renders the selection.
 -- 3. Creates fades around the selection.
 --
