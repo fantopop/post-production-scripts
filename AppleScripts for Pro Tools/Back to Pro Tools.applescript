@@ -6,7 +6,7 @@
 -- 2. Renders the selection.
 -- 3. Creates fades around the selection.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 --
 

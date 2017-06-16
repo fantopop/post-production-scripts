@@ -4,7 +4,7 @@
 -- Script description:
 -- Clicks on the render button of an Audio Suite plug-in if there is an open one.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

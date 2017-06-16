@@ -6,7 +6,7 @@
 -- Note: if the Strip Silence window was open, just stripes the silence.
 -- If the window was closed - closes the window after stripping. 
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 --
 

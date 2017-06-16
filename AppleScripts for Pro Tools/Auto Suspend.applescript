@@ -5,7 +5,7 @@
 -- Enables Suspend Automation mode.
 -- If the Automation window was not open, the scripts closes the window at the end of execution.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

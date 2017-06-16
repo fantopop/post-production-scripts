@@ -5,7 +5,7 @@
 -- Copies selection to the first alternate playlist.
 -- Warning! Before applying, make sure that the playlist exists and is empty.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

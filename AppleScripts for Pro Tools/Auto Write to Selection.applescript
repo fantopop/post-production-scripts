@@ -7,7 +7,7 @@
 --
 -- Note: Automation Preview mode is available in Pro Tools HD only.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

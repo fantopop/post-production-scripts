@@ -4,7 +4,7 @@
 -- Script description:
 -- Sends selection to iZotope RX Audio Editor using RX Connect plug-in.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

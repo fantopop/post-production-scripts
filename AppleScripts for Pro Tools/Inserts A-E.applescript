@@ -4,7 +4,7 @@
 -- Script description:
 -- Opens Inserts A-E panel.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

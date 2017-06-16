@@ -5,7 +5,7 @@
 -- Cuts the selection and makes fades on the edges.
 -- Left fade - 2 nudge values, right fade - 1 nudge value.
 --
--- (C) 2017 Ilya Putilin
+-- © 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 
