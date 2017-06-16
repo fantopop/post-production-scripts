@@ -23,7 +23,7 @@ tell application "System Events"
 				-- Automation window can be determined by presence of Suspend Automation button.
 				if (count (buttons of currentWindow whose title contains "Suspend Automation")) is greater than 0 then
 					-- Click and exit the script.
-					click button "Enable Auto Preview Mode" of currentWindow
+					click button "Punch Automation Preview" of currentWindow
 					return
 				end if
 			end repeat
@@ -33,7 +33,7 @@ tell application "System Events"
 		click menu item "Automation" of menu "Window" of menu bar item "Window" of menu bar 1
 		-- Click.
 		set automationWindow to (1st window whose name is "")
-		tell automationWindow to click button "Enable Auto Preview Mode"
+		tell automationWindow to click button "Punch Automation Preview"
 		-- Close the window.
 		tell automationWindow to click button 1
 		

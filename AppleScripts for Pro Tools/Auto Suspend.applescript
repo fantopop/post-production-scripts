@@ -19,11 +19,7 @@ tell application "System Events"
 			-- Search within windows without title.
 			repeat with currentWindow in allWindows
 				-- Automation window can be determined by presence of Suspend Automation button.
-<<<<<<< Updated upstream:AppleScripts for Pro Tools/Suspend Automation.applescript
 				if (count (buttons of currentWindow whose title contains "Suspend Automation")) is greater than 0 then
-=======
-				if count (buttons of currentWindow whose title contains "Suspend Automation") is greater than 0 then
->>>>>>> Stashed changes:AppleScripts for Pro Tools/Auto Suspend.applescript
 					-- Click and exit the script.
 					click button "Suspend Automation" of currentWindow
 					return
