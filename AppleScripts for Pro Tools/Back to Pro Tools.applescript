@@ -12,7 +12,6 @@
 
 activate application "iZotope RX 6 Audio Editor"
 tell application "System Events"
-	delay 0.02
 	-- Send to Pro Tools.
 	tell process "iZotope RX 6"
 		-- press Cmd + Enter
@@ -26,7 +25,7 @@ tell application "System Events"
 		
 		-- Click Render button.
 		tell (1st window whose name contains "Audio Suite: RX 6 Connect") to click button "Render"
-		delay 0.1
+		delay 0.2
 		
 		-- Count current number of windows.
 		set num to count windows
@@ -36,13 +35,10 @@ tell application "System Events"
 			set num to count windows
 			delay 0.1
 		end repeat
-		delay 0.1
 		
 		-- Extend selection.
 		key code 69 using {command down, shift down}
-		delay 0.02
 		key code 78 using {option down, shift down}
-		delay 0.02
 		
 		-- Create fades.
 		keystroke "f"

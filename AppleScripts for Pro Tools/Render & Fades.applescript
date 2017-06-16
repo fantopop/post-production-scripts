@@ -22,23 +22,20 @@ tell application "System Events"
 			
 			-- Click Render button.
 			tell (1st window whose name contains "Audio Suite") to click button "Render"
-			delay 0.1
+			delay 0.2
 			
 			-- Count current number of windows.
 			set num to count windows
 			
 			-- Wait until render completes.
 			repeat while num is greater than numBefore
-				set num to count windows
 				delay 0.1
+				set num to count windows
 			end repeat
-			delay 0.1
 			
 			-- Extend selection.
 			key code 69 using {command down, shift down}
-			delay 0.02
 			key code 78 using {option down, shift down}
-			delay 0.02
 			
 			-- Create fades.
 			keystroke "f"

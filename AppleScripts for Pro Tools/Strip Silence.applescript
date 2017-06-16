@@ -17,7 +17,6 @@ tell application "System Events"
 		set wasOpen to true
 		if (count (windows whose title contains "Strip Silence")) is 0 then
 			keystroke "u" using {command down}
-			delay 0.02
 			set wasOpen to false
 		end if
 		
@@ -25,7 +24,6 @@ tell application "System Events"
 		
 		-- Strip silence.
 		tell stripSilenceWindow to click button "Strip"
-		delay 0.05
 		
 		-- Close the window if it wasn't open.
 		if not wasOpen then

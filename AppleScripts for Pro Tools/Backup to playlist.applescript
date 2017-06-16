@@ -23,27 +23,19 @@ tell application "System Events"
 		if countBefore is not equal to countAfter then
 			-- Hit ESC.
 			key code 53
-			delay 0.02
 			display dialog "Can't open playlists. Try to remove all clip groups from the track" buttons {"OK"} default button {"OK"} with icon caution with title "AppleScript error"
 			return
 		end if
 		
 		-- Copy selection.
 		keystroke "c"
-		delay 0.02
 		
 		-- Paste selection.
 		keystroke ";"
-		delay 0.02
 		keystroke "v"
-		delay 0.02
 		
 		-- Close playlists.
 		keystroke "p"
-		delay 0.02
-		keystroke ""
 		key code 124 using {command down, control down}
-		
-		-- display notification "Selection copied to the first playlist." with title "Backup to playlist"
 	end tell
 end tell

@@ -17,23 +17,17 @@ tell application "System Events"
 		
 		-- Make selection to the left of the edge.
 		key code 78 using {option down, shift down}
-		delay 0.02
 		key code 78 using {option down, shift down}
-		delay 0.02
 		
 		-- Create left fade.
 		keystroke "f"
-		delay 0.02
 		
 		-- Tab to the right edge.
 		key code 48
-		delay 0.02
 		key code 48
-		delay 0.02
 		
 		-- Make selection to the right of the edge.
 		key code 69 using {command down, shift down}
-		delay 0.02
 		
 		-- Create right fade.
 		keystroke "f"
