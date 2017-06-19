@@ -13,8 +13,8 @@ Collection of scripts for Pro Tools to enhance workflow and fasten our daily wor
   - Suspend Automation
   - Write Automation to Selection
 * iZotope RX
-  - Send from iZotope back to Pro Tools
   - Send to iZotope RX Audio Editor
+  - Send from iZotope back to Pro Tools
 * Render
   - Render
   - Render & Fades
