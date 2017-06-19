@@ -29,22 +29,22 @@ This is my keymap for most frequent actions. You can skip this, or use it as a s
 ## Scripts
 ### Automation
 A group of scripts for accessing Automation Window buttons. All scripts also work with a closed Automation Window, in this case it leaves it closed after performing an action.
-#### [Enable Automation Preview mode](AppleScripts/Auto%20Preview.applescript)
-Toggles Automation Preview mode.
-#### [Punch Automation Preview](AppleScripts/Auto%20Punch%20Preview.applescript)
-#### [Suspend Automation](AppleScripts/Auto%20Suspend.applescript)
-#### [Write Automation to Selection](AppleScripts/Auto%20Write%20to%20Selection.applescript)
+#### [Enable Automation Preview mode](Auto%20Preview.applescript)
+#### [Punch Automation Preview](Auto%20Punch%20Preview.applescript)
+#### [Suspend Automation](Auto%20Suspend.applescript)
+#### [Write Automation to Selection](Auto%20Write%20to%20Selection.applescript)
 ### iZotope RX
 These scripts are currently configured to work with iZotope RX 6. Replace all occurrences of 6 with 5 to work with an older version of RX.
-#### [Send to iZotope RX Audio Editor](AppleScripts/Send%20to%20RX.applescript)
+#### [Send to iZotope RX Audio Editor](Send%20to%20RX.applescript)
 Opens iZotope RX Connect plug-in window if needed, and sends selection to iZotope RX Audio Editor app. For some reason this script isn't working with FastScripts app, so this is the only one ser
-#### [Send from iZotope back to Pro Tools](AppleScripts/Back%20to%20Pro%20Tools.applescript)
+#### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection (2 nudge values to the left, 1 nudge value to the right.)
 ### Render
-#### [Render](AppleScripts/Render.applescript)
-#### [Render & Fades](AppleScripts/Render%20&%20Fades.applescript)
+Renders the selection with frontmost or last frontmost Auduisuite plug-in. 
+#### [Render](Render.applescript)
+#### [Render & Fades](Render%20&%20Fades.applescript)
 ### Miscellaneous
-#### [Backup to playlist](AppleScripts/Backup%20to%20playlist.applescript)
-#### [Cut & Fades](AppleScripts/Cut%20&%20Fades.applescript)
-#### [Toggle Inserts A-E panel](AppleScripts/Inserts%20A-E.applescript)
-#### [Strip Silence & Fades](AppleScripts/Strip%20Silence.applescript)
+#### [Backup to playlist](Backup%20to%20playlist.applescript)
+#### [Cut & Fades](Cut%20&%20Fades.applescript)
+#### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
+#### [Strip Silence & Fades](Strip%20Silence.applescript)
