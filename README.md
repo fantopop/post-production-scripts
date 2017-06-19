@@ -6,7 +6,7 @@ Collection of AppleScripts and Python (compatible with Python2.7 and Python3.x) 
 - [tracks_to_csv.py](#tracks_to_csvpy)  
 
 ## AppleScripts for Pro Tools.
-Collection of scripts for Pro Tools to enhance workflow and fasten our daily work. See details in [README.md](AppleScripts/README.md) file in corresponding folder.
+Scripts for Pro Tools to enhance workflow and speed-up our daily work. See details in [README.md](AppleScripts/README.md) file in corresponding folder.
 * Automation
   - Enable Automation Preview mode
   - Punch Automation Preview
