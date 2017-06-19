@@ -31,7 +31,7 @@ Collection of scripts for Pro Tools to enhance workflow and fasten our daily wor
 4. Drag script from the Finder to the Terminal window.
 5. Specify options and input file(s) (see detailed description for corresponding script) and press return.
 
-You can run scripts with `-h` option to see help message and options description.
+You can run scripts with `-h` option to see help message and available options.
 
 ## correct_edl.py
 Replaces strings in `*FROM CLIP NAME` field of the EDL, accroding to the dictionary from the `.json` file. Corrected EDL is written to the new file, with `.corrected` added to the filename. Lines, starting with `*SOURCE FILE` are omitted. Main event lines are leaved unchanged.  
