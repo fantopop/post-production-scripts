@@ -6,8 +6,9 @@ There are several ways to run script with a shortcut. The native macOS way is to
 Also you can check [Soundflow](https://soundflow.org) and [Keyboard Maestro](https://www.keyboardmaestro.com).
 
 ## Keymap
-This is my keymap for most frequent actions. You can skip this, or use it as a starting point.
-| Action                      | Shortcut | Type     |
+This is my keymap for most frequent actions. You can skip this, or use it as a starting point.  
+
+| Action                        | Shortcut | Type     |
 |-------------------------------|----------|----------|
 | Send to RX                    | ^⌘Z      | Script   |
 | Back to Pro Tools             | ^⌘\`     | Script   |
