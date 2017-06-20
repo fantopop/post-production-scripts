@@ -8,7 +8,7 @@ Sample shortcuts assignments can be found in [Keymap](#keymap) section.
   
 If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard Maestro](https://www.keyboardmaestro.com).
 
-## Installation for use with FastScripts.
+## Install for use with FastScripts
 1. Install [FastScripts](https://red-sweater.com/fastscripts/).
 2. Download [all scripts](https://github.com/fantopop/post-production-scripts/archive/master.zip) or choose manually the ones that you need.
 3. Move `Back to Pro Tools.applescript` to `~/Library/Scripts/Applications/iZotope RX 6/` folder and all other scripts to `~/Library/Scripts/Applications/Pro Tools/`.
