@@ -1,5 +1,5 @@
 # AppleScripts for Avid Pro Tools
-These scripts aim enhancing workflow and speeding-up our daily work. AppleScript provides convenient methods for accessing menu items, windows, buttons and sending keystrokes to apps. Feel free to modificate scripts for your needs and upload new scripts to this repository.
+These scripts aim to enhance workflow and speed-up our daily work. AppleScript provides convenient methods for accessing menu items, windows, buttons and sending keystrokes to apps. Feel free to modificate scripts for your needs and upload new scripts to this repository.
 
 ## Usage
 There are several ways to run script with a shortcut. The native macOS way is to configure a Service using Automator and assign a shortcut in System Preferences. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) you can find a good step-by-step instructions for this method. But with Services there is small but noticeable delay in performance. Also it seems, that iZotope RX Audio Editor does not support services,  so I prefer using [FastScripts](https://red-sweater.com/fastscripts/) app. It alows to run scripts from `~/Library/Scripts` folder and assign shortcuts to them. You can assign 10 shortcuts for free, or pay $9.95 to unlock unlimited shortcuts.  
