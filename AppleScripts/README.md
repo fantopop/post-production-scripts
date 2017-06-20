@@ -2,8 +2,38 @@
 These scripts aim enhancing workflow and speeding-up our daily work. AppleScript provides convenient methods for accessing menu items, windows, buttons and sending keystrokes to apps. Feel free to modificate scripts for your needs and upload new scripts to this repository.
 
 ## Usage
-There are several ways to run script with a shortcut. The native macOS way is to configure a Service using Automator app and assign a shortcut in System Preferences. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) you can find a good step-by-step instructions for this method. But with Services there is small but noticeable delay in performance. Also it seems, that iZotope RX Audio Editor does not support services,  so I prefer using [FastScripts](https://red-sweater.com/fastscripts/) app. It alows to run scripts from `~/Library/Scripts` folder and assign shortcuts to them. Your can assign 10 shortcuts for free, or pay $9.95 to unlock unlimited shortcuts.  
-Also you can check [Soundflow](https://soundflow.org) and [Keyboard Maestro](https://www.keyboardmaestro.com).
+There are several ways to run script with a shortcut. The native macOS way is to configure a Service using Automator app and assign a shortcut in System Preferences. [Here](http://davidteren.github.io/Pro-Tools-Edit-Macros/) you can find a good step-by-step instructions for this method. But with Services there is small but noticeable delay in performance. Also it seems, that iZotope RX Audio Editor does not support services,  so I prefer using [FastScripts](https://red-sweater.com/fastscripts/) app. It alows to run scripts from `~/Library/Scripts` folder and assign shortcuts to them. You can assign 10 shortcuts for free, or pay $9.95 to unlock unlimited shortcuts.  
+  
+Sample shortcuts assignments can be found in [Keymap](#keymap) section.
+  
+If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard Maestro](https://www.keyboardmaestro.com).
+
+## Scripts
+### Automation
+A group of scripts for accessing Automation Window buttons. All scripts also work with a closed Automation Window, in this case it leaves it closed after performing an action.
+#### [Enable Automation Preview mode](Auto%20Preview.applescript)
+#### [Punch Automation Preview](Auto%20Punch%20Preview.applescript)
+#### [Suspend Automation](Auto%20Suspend.applescript)
+#### [Write Automation to Selection](Auto%20Write%20to%20Selection.applescript)
+### iZotope RX
+These scripts are currently configured to work with iZotope RX 6. Replace all occurrences of 6 with 5 to work with an older version of RX.
+#### [Send to iZotope RX Audio Editor](Send%20to%20RX.applescript)
+Opens iZotope RX Connect plug-in window if needed, and sends selection to iZotope RX Audio Editor. For some reason this script isn't working with FastScripts, so this is the only one that I've installed as Service.
+#### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
+Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
+### Render
+Renders the selection with frontmost or last frontmost Auduisuite plug-in. 
+#### [Render](Render.applescript)
+#### [Render & Fades](Render%20&%20Fades.applescript)
+Creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
+### Miscellaneous
+#### [Backup to playlist](Backup%20to%20playlist.applescript)
+Copies selection to the topmost alternate playlist. Make sure that the playlist exists and is empty at the selection, as the script will copy clips on top.
+#### [Cut & Fades](Cut%20&%20Fades.applescript)
+Cuts selection and creates fades around it.
+#### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
+#### [Strip Silence & Fades](Strip%20Silence.applescript)
+Strips silence with current settings. It's handy to run script without opening Strip Silence window, in this case the script will close the window at the end. This script is intended to work with long narrative tracks recorded with similar gain for the whole track. You can adjust Strip Silence settings once, and then use it in place with one keystroke.
 
 ## Keymap
 This is my keymap for most frequent actions. You can skip this, or use it as a starting point.  
@@ -26,25 +56,3 @@ This is my keymap for most frequent actions. You can skip this, or use it as a s
 | Inserts A-E                   | F17      | Script   |
 | Track I/O                     | F18      | Shortcut |
 | Clip List                     | F19      | Shortcut |
-## Scripts
-### Automation
-A group of scripts for accessing Automation Window buttons. All scripts also work with a closed Automation Window, in this case it leaves it closed after performing an action.
-#### [Enable Automation Preview mode](Auto%20Preview.applescript)
-#### [Punch Automation Preview](Auto%20Punch%20Preview.applescript)
-#### [Suspend Automation](Auto%20Suspend.applescript)
-#### [Write Automation to Selection](Auto%20Write%20to%20Selection.applescript)
-### iZotope RX
-These scripts are currently configured to work with iZotope RX 6. Replace all occurrences of 6 with 5 to work with an older version of RX.
-#### [Send to iZotope RX Audio Editor](Send%20to%20RX.applescript)
-Opens iZotope RX Connect plug-in window if needed, and sends selection to iZotope RX Audio Editor app. For some reason this script isn't working with FastScripts app, so this is the only one ser
-#### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
-Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection (2 nudge values to the left, 1 nudge value to the right.)
-### Render
-Renders the selection with frontmost or last frontmost Auduisuite plug-in. 
-#### [Render](Render.applescript)
-#### [Render & Fades](Render%20&%20Fades.applescript)
-### Miscellaneous
-#### [Backup to playlist](Backup%20to%20playlist.applescript)
-#### [Cut & Fades](Cut%20&%20Fades.applescript)
-#### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
-#### [Strip Silence & Fades](Strip%20Silence.applescript)
