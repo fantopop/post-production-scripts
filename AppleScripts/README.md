@@ -8,13 +8,13 @@ Sample shortcuts assignments can be found in [Keymap](#keymap) section.
   
 If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard Maestro](https://www.keyboardmaestro.com).
 
-## Install for use with FastScripts
+## Installation for use with FastScripts
 1. Install [FastScripts](https://red-sweater.com/fastscripts/).
 2. Download [all scripts](https://github.com/fantopop/post-production-scripts/archive/master.zip) or choose manually the ones that you need.
 3. Move `Back to Pro Tools.applescript` to `~/Library/Scripts/Applications/iZotope RX 6/` folder and all other scripts to `~/Library/Scripts/Applications/Pro Tools/`.
 4. Assign shortcuts in FastScripts preferences.
 <img src="https://www.dropbox.com/s/bm0anm3eguf8mgs/fastscripts_preferences.png?raw=true" width="400">
-5. Enable access for assistive devices in Security pane of System Preferences.
+5. Enable access for assistive devices in Security & Privacy pane of System Preferences.
 <img src="https://www.dropbox.com/s/bflud17z1xiwes7/accessibility.png?raw=true" width="600">
 
 ## Scripts
