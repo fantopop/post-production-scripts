@@ -10,8 +10,7 @@ If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard
 
 ## Installation for use with FastScripts.
 1. Install [FastScripts](https://red-sweater.com/fastscripts/).
-2. Download all scripts from [main repository page](https://github.com/fantopop/post-production-scripts/).
-![Download files](https://www.dropbox.com/s/pavfcjhmgyh6cm4/download_master.png?raw=true)
+2. Download [all scripts](https://github.com/fantopop/post-production-scripts/archive/master.zip) or choose manually the ones that you need.
 3. Move `Back to Pro Tools.applescript` to `~/Library/Scripts/Applications/iZotope RX 6/` folder and all other scripts to `~/Library/Scripts/Applications/Pro Tools/`.
 4. Assign shortcuts in FastScripts preferences.
 <img src="https://www.dropbox.com/s/bm0anm3eguf8mgs/fastscripts_preferences.png?raw=true" width="400" align="middle">
