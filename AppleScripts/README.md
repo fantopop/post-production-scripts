@@ -8,6 +8,10 @@ Sample shortcuts assignments can be found in [Keymap](#keymap) section.
   
 If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard Maestro](https://www.keyboardmaestro.com).
 
+## Installation for use with FastScripts.
+1. Download all scripts from main repository page.
+![Download files](https://www.dropbox.com/s/pavfcjhmgyh6cm4/download_master.png?dl=0)
+
 ## Scripts
 ### Automation
 A group of scripts for accessing Automation Window buttons. All scripts also work with a closed Automation Window, in this case it leaves it closed after performing an action.
