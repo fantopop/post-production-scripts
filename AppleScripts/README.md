@@ -32,9 +32,9 @@ Opens iZotope RX Connect plug-in window if needed and sends selection to iZotope
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
 ### SoundRadix Auto-Align
 Two sripts to reduce amount of clicking on different buttons and windows while working with [SoundRadix Auto-Align](https://www.soundradix.com/products/auto-align/) plug-in. Both windows of Auto-Align are considered to be open.
-#### Auto-Align Detect
+#### [Auto-Align Detect](Auto-Align%20Detect.applescript)
 Toggles "Detect" button of currently open Auto-Align track insert.
-#### Auto-Align
+#### [Auto-Align](Auto-Align.applescript)
 Performs these actions at once:
 1. Copy current settings of the Auto-Align track insert.
 2. Paste these settings to an open AudioSuite Auto-Align plug-in.
