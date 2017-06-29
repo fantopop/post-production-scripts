@@ -30,6 +30,17 @@ These scripts are currently configured to work with iZotope RX 6. Replace all oc
 Opens iZotope RX Connect plug-in window if needed and sends selection to iZotope RX Audio Editor. For some reason this script doesn't work with FastScripts, so it's the only one that I've installed as Service.
 #### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
+### SoundRadix Auto-Align
+Two sripts to reduce amount of clicking on different buttons and windows while working with [SoundRadix Auto-Align](https://www.soundradix.com/products/auto-align/) plug-in. Both windows of Auto-Align are considered to be open.
+#### Auto-Align Detect
+Toggles "Detect" button of currently open Auto-Align track insert.
+#### Auto-Align
+Performs these actions at once:
+1. Copy current settings of the Auto-Align track insert.
+2. Paste these settings to an open AudioSuite Auto-Align plug-in.
+3. Render selection with these settings.
+4. Wait for render to complete and create fades around the selection.
+5. Bring track insert window back to front.
 ### Render
 Renders the selection with frontmost or last frontmost Audiosuite plug-in. 
 #### [Render](Render.applescript)
@@ -54,6 +65,8 @@ This is my keymap for most frequent actions. You can skip this or use it as a st
 | Favourite Audiosuite plug-ins | ^⌥ 1..9  | Menu shortcut |
 | Render                        | ^⌥R      | Script        |
 | Render & Fades                | ⌥⇧R      | Script        |
+| Auto-Align Detect             | §        | Script        |
+| Auto-Align                    | ^A       | Script        |
 | Enable Automation Preview     |          | Script        |
 | Punch Automation Preview      |          | Script        |
 | Write Automation to Selection |          | Script        |
