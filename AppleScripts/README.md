@@ -33,7 +33,7 @@ Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selectio
 ### SoundRadix Auto-Align
 Two sripts to reduce amount of clicking on different buttons and windows while working with [SoundRadix Auto-Align](https://www.soundradix.com/products/auto-align/) plug-in. Both windows of Auto-Align are considered to be open.
 #### [Auto-Align Detect](Auto-Align%20Detect.applescript)
-Toggles "Detect" button of currently open Auto-Align track insert.
+Toggles "Detect" state of currently open Auto-Align track insert.
 #### [Auto-Align](Auto-Align.applescript)
 Performs these actions at once:
 1. Copy current settings of the Auto-Align track insert.
