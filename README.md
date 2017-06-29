@@ -15,6 +15,9 @@ Scripts for Pro Tools to enhance workflow and speed-up our daily work. See detai
 * iZotope RX
   - Send to iZotope RX Audio Editor
   - Send from iZotope back to Pro Tools
+* SoundRadix Auto-Align
+  - Auto-Align Detect
+  - Auto-Align
 * Render
   - Render
   - Render & Fades
