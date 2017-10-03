@@ -54,6 +54,14 @@ Cuts selection and creates fades around it.
 #### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
 #### [Strip Silence & Fades](Strip%20Silence.applescript)
 Strips silence with current settings. It's handy to run script without opening Strip Silence window, in this case the script will close the window at the end. This script is intended to work with long narrative tracks recorded with similar gain for the whole track. You can adjust Strip Silence settings once and then use it in place with one keystroke.
+#### [Track Renamer](Track%20Renamer.applescript)
+Renames number of tracks, giving them sequential names. Usage:
+
+1. Open track rename window and enter `PREFIX` for new track names in the `Name the track` field.
+2. Run the script.
+3. Enter the number of tracks to rename.
+
+Folowing tracks will be renamed to: `PREFIX1`, `PREFIX2` ... Track rename window is left open, so you can enter prefix for the next batch of tracks and run the script again.
 
 ## Keymap
 This is my keymap for most frequent actions. You can skip this or use it as a starting point.
@@ -74,6 +82,7 @@ This is my keymap for most frequent actions. You can skip this or use it as a st
 | Backup to playlist            | ⌥B       | Script        |
 | Cut & Fades                   | ⌥X       | Script        |
 | Strip Silence & Fades         | ⌥S       | Script        |
+| Track Renamer                 | ⌘R       | Script        |
 | Track List                    | F16      | Menu shortcut |
 | Inserts A-E                   | F17      | Script        |
 | Track I/O                     | F18      | Menu shortcut |
