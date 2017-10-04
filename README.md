@@ -26,6 +26,7 @@ Scripts for Pro Tools to enhance workflow and speed-up our daily work. See detai
   - Cut & Fades
   - Toggle Inserts A-E panel
   - Strip Silence & Fades
+  - Track Renamer
 
 ## How to use Python scripts (macOS):
 1. Download `.py` file (and other files if neccessary).
