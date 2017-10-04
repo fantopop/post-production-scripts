@@ -18,32 +18,39 @@ tell application "System Events"
 		key code 36 using {command down}
 	end tell
 	delay 0.5
-	
-	tell process "Pro Tools"
-		-- Count windows before processing.
-		set numBefore to count windows
-		
-		-- Click Render button.
-		tell (1st window whose name contains "Audio Suite: RX 6 Connect") to click button "Render"
-		delay 0.2
-		
-		-- Count current number of windows.
-		set num to count windows
-		
-		-- Wait until render completes.
-		repeat while num is greater than numBefore
+end tell
+
+tell application "Finder"
+	tell application "System Events"
+		set PT to the first application process whose creator type is "PTul"
+		tell PT
+			activate
+			set frontmost to true
+			-- Count windows before processing.
+			set numBefore to count windows
+			
+			-- Click Render button.
+			tell (1st window whose name contains "Audio Suite: RX 6 Connect") to click button "Render"
+			delay 0.2
+			
+			-- Count current number of windows.
 			set num to count windows
-			delay 0.1
-		end repeat
-		
-		-- Extend selection.
-		key code 69 using {command down, shift down}
-		key code 78 using {option down, shift down}
-		
-		-- Create fades.
-		keystroke "f"
-		
-		-- Close window
-		-- tell (1st window whose name contains "Audio Suite: RX 6 Connect") to click button 1
+			
+			-- Wait until render completes.
+			repeat while num is greater than numBefore
+				set num to count windows
+				delay 0.1
+			end repeat
+			
+			-- Extend selection.
+			key code 69 using {command down, shift down}
+			key code 78 using {option down, shift down}
+			
+			-- Create fades.
+			keystroke "f"
+			
+			-- Close window
+			-- tell (1st window whose name contains "Audio Suite: RX 6 Connect") to click button 1
+		end tell
 	end tell
 end tell

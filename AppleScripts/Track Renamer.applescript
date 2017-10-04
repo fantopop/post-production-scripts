@@ -13,41 +13,51 @@
 -- http://github.com/fantopop
 -- 
 
-set Responce to display dialog "Enter number of tracks to rename?" default answer "1" buttons {"Cancel", "OK"} Â
-	default button "OK" cancel button "Cancel"
-set N to (text returned of Responce) as number
+set request to display dialog "Enter number of tracks to rename?" default answer "1" buttons {"Cancel", "OK"} default button "OK" cancel button "Cancel"
+set N to (text returned of request) as number
 
-tell application "System Events"
-	tell process "Pro Tools"
-		# Get prefix from the text field
-		set win to 1st window
-		set prefix to name of 1st text field of win
-		
-		set i to 1
-		repeat N times
-			# Get rename window
-			set win to 1st window
-			
-			# Get track name text field
-			set txt to 1st text field of win
-			
-			# Click on the text field
-			tell txt to perform action "AXPress"
-			
-			# Bring rename window to front
+tell application "Finder"
+	tell application "System Events"
+		set PT to the first application process whose creator type is "PTul"
+		tell PT
+			activate
 			set frontmost to true
-			perform action "AXRaise" of win
 			
-			# Select all text
-			keystroke "a" using {command down}
+			# Get prefix from the text field
+			set prefix to name of 1st text field of front window
 			
-			# Construct new name for the track
-			set TrackName to prefix & (i as string)
-			keystroke TrackName
-			
-			# Go to the next track
-			key code 124 using {command down}
-			set i to i + 1
-		end repeat
+			set i to 1
+			repeat N times
+				# Iterate to find unused number i with current prefix
+				set renamed to false
+				repeat while renamed is false
+					# Bring rename window to front
+					set frontmost to true
+					perform action "AXRaise" of front window
+					
+					# Select all text
+					keystroke "a" using {command down}
+					
+					# Construct new name for the track
+					set TrackName to prefix & (i as string)
+					keystroke TrackName
+					
+					# Go to the next track
+					key code 124 using {command down}
+					
+					# Check for valid new track name
+					set newWindowName to name of front window
+					if newWindowName is "" then
+						# Dismiss error window
+						key code 36
+						# Increment i
+						set i to i + 1
+					else
+						set renamed to true
+					end if
+				end repeat
+				set i to i + 1
+			end repeat
+		end tell
 	end tell
 end tell

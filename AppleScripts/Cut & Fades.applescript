@@ -9,27 +9,32 @@
 -- http://github.com/fantopop
 -- 
 
-activate application "Pro Tools"
-tell application "System Events"
-	tell process "Pro Tools"
-		-- Cut
-		keystroke "x"
-		
-		-- Make selection to the left of the edge.
-		key code 78 using {option down, shift down}
-		key code 78 using {option down, shift down}
-		
-		-- Create left fade.
-		keystroke "f"
-		
-		-- Tab to the right edge.
-		key code 48
-		key code 48
-		
-		-- Make selection to the right of the edge.
-		key code 69 using {command down, shift down}
-		
-		-- Create right fade.
-		keystroke "f"
+tell application "Finder"
+	tell application "System Events"
+		set PT to the first application process whose creator type is "PTul"
+		tell PT
+			activate
+			set frontmost to true
+			
+			-- Cut
+			keystroke "x"
+			
+			-- Make selection to the left of the edge.
+			key code 78 using {option down, shift down}
+			key code 78 using {option down, shift down}
+			
+			-- Create left fade.
+			keystroke "f"
+			
+			-- Tab to the right edge.
+			key code 48
+			key code 48
+			
+			-- Make selection to the right of the edge.
+			key code 69 using {command down, shift down}
+			
+			-- Create right fade.
+			keystroke "f"
+		end tell
 	end tell
 end tell
