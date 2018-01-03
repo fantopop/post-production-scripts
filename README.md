@@ -3,7 +3,7 @@ Collection of AppleScripts and Python (compatible with Python2.7 and Python3.x) 
 - [AppleScripts for Pro Tools](AppleScripts)
 - [correct_edl.py](#correct_edlpy)
 - [rename_mixer_files.py](#rename_mixer_filespy)
-- [Session info to table converter](#Session-info-to-table-converter)  
+- [Session info to table converter](#session-info-to-table-converter)  
 
 ## AppleScripts for Pro Tools.
 Scripts for Pro Tools to enhance workflow and speed-up our daily work. See details in [README.md](AppleScripts/README.md) file in corresponding folder.
