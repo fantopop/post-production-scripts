@@ -194,7 +194,11 @@ class TableRow (object):
         if self.bgcolor: self.attribs['bgcolor'] = self.bgcolor
         for attr in self.attribs:
             attribs_str += ' %s="%s"' % (attr, self.attribs[attr])
-        result = ' <TR%s>\n' % attribs_str
+        if self.header:
+            result = '<THEAD>'
+        else:
+            result = ''
+        result += ' <TR%s>\n' % attribs_str
         for cell in self.cells:
             col = self.cells.index(cell)    # cell column index
             if not isinstance(cell, TableCell):
@@ -213,6 +217,8 @@ class TableRow (object):
                 cell.style = self.col_styles[col]
             result += str(cell)
         result += ' </TR>\n'
+        if self.header:
+            result += '</THEAD>'
         return result
 
 #-------------------------------------------------------------------------------

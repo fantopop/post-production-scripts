@@ -68,15 +68,23 @@ class Session():
         h = html.HTML()
         with h.html():
             with h.head():
+                h.add('<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">')
                 with h.title():
                     # Add document title
                     h.add(filename.split('.')[-2].split('/')[-1])
                 with h.style():
                     h.add('@media print {')
+                    h.indent += 1
                     # Add page break after each track's table when printing
-                    h.add('  table {page-break-after: always;}')
+                    h.add('TABLE { page-break-after: always}')
+                    # Configure correct display of table over multiple printing pages
+                    h.add('TR    { page-break-inside:avoid; page-break-after:auto }')
+                    h.add('TD    { page-break-inside:avoid; page-break-after:auto }')
+                    h.add('THEAD { display:table-header-group }')
+                    h.add('TFOOT { display:table-footer-group }')
                     # Set default landscape orientation when printing
-                    h.add('  @page {size: landscape;}}')
+                    h.add('@page {size: landscape;}}')
+                    h.indent -= 1
                     h.add(table_style)
             with h.body():
                 for track in self.tracks:
