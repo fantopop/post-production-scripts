@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ADR
+        </title>
+        <style>
+            @media print {
+              table {page-break-after: always;}
+              @page {size: landscape;}}
+            table {border-collapse: collapse;} th, td {border: 1px solid #ccc;padding: 8px;}
+        </style>
+    </head>
+    <body>
+        <h2>
+            РАССКАЗЧИК
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">РАССКАЗЧИК</TD>
+          <TD align="center">01:00:11:18</TD>
+          <TD align="center">01:01:22:05</TD>
+          <TD align="center">00:01:10:11</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">РАССКАЗЧИК</TD>
+          <TD align="center">05:11:28:07</TD>
+          <TD align="center">05:11:48:19</TD>
+          <TD align="center">00:00:20:12</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ЖЕНЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">01:03:28:04</TD>
+          <TD align="center">01:03:46:03</TD>
+          <TD align="center">00:00:17:24</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">01:09:00:07</TD>
+          <TD align="center">01:09:50:24</TD>
+          <TD align="center">00:00:50:17</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">05:01:56:13</TD>
+          <TD align="center">05:02:32:17</TD>
+          <TD align="center">00:00:36:04</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">05:06:39:17</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">00:00:52:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ЖЕНЯ</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ОКСАНА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">01:16:18:01</TD>
+          <TD align="center">01:16:21:13</TD>
+          <TD align="center">00:00:03:12</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ОКСАНА ???</TD>
+          <TD align="center">01:18:48:17</TD>
+          <TD align="center">01:18:49:23</TD>
+          <TD align="center">00:00:01:06</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">03:00:00:00</TD>
+          <TD align="center">03:01:28:08</TD>
+          <TD align="center">00:01:28:08</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">091____01T004_-01.A2</TD>
+          <TD align="center">05:01:56:10</TD>
+          <TD align="center">05:01:56:13</TD>
+          <TD align="center">00:00:00:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">05:01:56:13</TD>
+          <TD align="center">05:02:32:17</TD>
+          <TD align="center">00:00:36:04</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">05:06:39:17</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">00:00:52:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">ОКСАНА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ПАША
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">01:03:28:04</TD>
+          <TD align="center">01:03:46:03</TD>
+          <TD align="center">00:00:17:24</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ПАША ???</TD>
+          <TD align="center">01:15:50:16</TD>
+          <TD align="center">01:15:56:00</TD>
+          <TD align="center">00:00:05:09</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">02:01:54:21</TD>
+          <TD align="center">02:02:11:23</TD>
+          <TD align="center">00:00:17:02</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ПАША !!!!!!</TD>
+          <TD align="center">02:08:27:09</TD>
+          <TD align="center">02:08:29:16</TD>
+          <TD align="center">00:00:02:07</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">04:07:55:04</TD>
+          <TD align="center">04:08:07:02</TD>
+          <TD align="center">00:00:11:22</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">04:15:41:04</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">00:01:17:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">05:07:19:15</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">00:00:12:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">9</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">05:09:44:07</TD>
+          <TD align="center">05:09:51:19</TD>
+          <TD align="center">00:00:07:12</TD>
+         </TR>
+         <TR>
+          <TD align="center">10</TD>
+          <TD align="left">ПАША</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            АСЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">01:03:57:15</TD>
+          <TD align="center">01:04:47:03</TD>
+          <TD align="center">00:00:49:13</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">01:05:09:17</TD>
+          <TD align="center">01:05:11:21</TD>
+          <TD align="center">00:00:02:04</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">01:12:20:11</TD>
+          <TD align="center">01:12:23:20</TD>
+          <TD align="center">00:00:03:09</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">02:09:53:09</TD>
+          <TD align="center">02:11:26:17</TD>
+          <TD align="center">00:01:33:08</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">03:11:50:11</TD>
+          <TD align="center">03:11:52:10</TD>
+          <TD align="center">00:00:01:24</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">04:04:49:18</TD>
+          <TD align="center">04:04:59:03</TD>
+          <TD align="center">00:00:09:10</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">04:06:27:00</TD>
+          <TD align="center">04:07:31:02</TD>
+          <TD align="center">00:01:04:02</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">04:09:50:04</TD>
+          <TD align="center">04:10:54:18</TD>
+          <TD align="center">00:01:04:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">9</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">04:17:05:17</TD>
+          <TD align="center">00:00:06:17</TD>
+         </TR>
+         <TR>
+          <TD align="center">10</TD>
+          <TD align="left">АСЯ</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">05:09:34:20</TD>
+          <TD align="center">00:00:16:24</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            БОРЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">01:07:07:02</TD>
+          <TD align="center">01:07:39:02</TD>
+          <TD align="center">00:00:32:00</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">БОРЯ (можно наверное оставить)</TD>
+          <TD align="center">01:07:39:02</TD>
+          <TD align="center">01:07:48:20</TD>
+          <TD align="center">00:00:09:18</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">01:08:06:16</TD>
+          <TD align="center">01:08:19:01</TD>
+          <TD align="center">00:00:12:10</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">05:02:32:17</TD>
+          <TD align="center">05:03:30:18</TD>
+          <TD align="center">00:00:58:01</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">05:05:40:08</TD>
+          <TD align="center">05:06:39:17</TD>
+          <TD align="center">00:00:59:09</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">БОРЯ</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ГАЛИНА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ГАЛИНА</TD>
+          <TD align="center">03:00:00:00</TD>
+          <TD align="center">03:01:28:08</TD>
+          <TD align="center">00:01:28:08</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ГАЛИНА</TD>
+          <TD align="center">05:00:00:00</TD>
+          <TD align="center">05:01:56:10</TD>
+          <TD align="center">00:01:56:10</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ГАЛИНА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ГАЛИНА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            КОЛЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">01:13:40:13</TD>
+          <TD align="center">01:15:01:08</TD>
+          <TD align="center">00:01:20:20</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">01:15:01:08</TD>
+          <TD align="center">01:15:35:08</TD>
+          <TD align="center">00:00:34:00</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">02:06:01:08</TD>
+          <TD align="center">02:06:33:04</TD>
+          <TD align="center">00:00:31:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">02:16:43:14</TD>
+          <TD align="center">02:18:37:24</TD>
+          <TD align="center">00:01:54:10</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">03:03:51:19</TD>
+          <TD align="center">03:04:18:24</TD>
+          <TD align="center">00:00:27:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">03:09:57:00</TD>
+          <TD align="center">03:10:07:03</TD>
+          <TD align="center">00:00:10:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">04:02:49:17</TD>
+          <TD align="center">04:03:03:03</TD>
+          <TD align="center">00:00:13:11</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">??? КОЛЯ ???</TD>
+          <TD align="center">04:03:05:14</TD>
+          <TD align="center">04:04:28:16</TD>
+          <TD align="center">00:01:23:02</TD>
+         </TR>
+         <TR>
+          <TD align="center">9</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">04:12:16:07</TD>
+          <TD align="center">04:12:29:13</TD>
+          <TD align="center">00:00:13:06</TD>
+         </TR>
+         <TR>
+          <TD align="center">10</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">05:00:00:00</TD>
+          <TD align="center">05:01:56:10</TD>
+          <TD align="center">00:01:56:10</TD>
+         </TR>
+         <TR>
+          <TD align="center">11</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">12</TD>
+          <TD align="left">КОЛЯ</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            СМЕРТЬ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">01:07:48:20</TD>
+          <TD align="center">01:08:06:16</TD>
+          <TD align="center">00:00:17:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">01:11:38:09</TD>
+          <TD align="center">01:12:09:15</TD>
+          <TD align="center">00:00:31:06</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">02:13:47:17</TD>
+          <TD align="center">02:15:06:14</TD>
+          <TD align="center">00:01:18:22</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">03:15:55:06</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">00:00:49:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">СМЕРТЬ</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ДИМА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">03:06:19:03</TD>
+          <TD align="center">03:07:45:14</TD>
+          <TD align="center">00:01:26:11</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">03:14:08:18</TD>
+          <TD align="center">03:15:30:16</TD>
+          <TD align="center">00:01:21:23</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ДИМА.grp</TD>
+          <TD align="center">04:08:07:02</TD>
+          <TD align="center">04:08:20:07</TD>
+          <TD align="center">00:00:13:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">04:08:20:07</TD>
+          <TD align="center">04:08:29:10</TD>
+          <TD align="center">00:00:09:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">04:09:50:04</TD>
+          <TD align="center">04:10:54:18</TD>
+          <TD align="center">00:01:04:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">04:17:27:03</TD>
+          <TD align="center">00:00:28:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">05:05:28:10</TD>
+          <TD align="center">05:05:50:09</TD>
+          <TD align="center">00:00:21:24</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">9</TD>
+          <TD align="left">ДИМА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            АЛЕНА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">01:10:37:00</TD>
+          <TD align="center">01:10:38:04</TD>
+          <TD align="center">00:00:01:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">03:06:19:03</TD>
+          <TD align="center">03:07:45:14</TD>
+          <TD align="center">00:01:26:11</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">03:14:08:18</TD>
+          <TD align="center">03:15:30:16</TD>
+          <TD align="center">00:01:21:23</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">АЛЕНА.grp</TD>
+          <TD align="center">04:08:07:02</TD>
+          <TD align="center">04:08:20:07</TD>
+          <TD align="center">00:00:13:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">04:08:20:07</TD>
+          <TD align="center">04:08:29:10</TD>
+          <TD align="center">00:00:09:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">04:09:50:04</TD>
+          <TD align="center">04:10:54:18</TD>
+          <TD align="center">00:01:04:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">04:17:27:03</TD>
+          <TD align="center">00:00:28:03</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">05:05:28:10</TD>
+          <TD align="center">05:05:50:09</TD>
+          <TD align="center">00:00:21:24</TD>
+         </TR>
+         <TR>
+          <TD align="center">9</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">10</TD>
+          <TD align="left">АЛЕНА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ДИСПЕТЧЕР
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ДИСПЕТЧЕР</TD>
+          <TD align="center">01:12:23:19</TD>
+          <TD align="center">01:13:40:13</TD>
+          <TD align="center">00:01:16:19</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ДИСПЕТЧЕР</TD>
+          <TD align="center">05:02:32:17</TD>
+          <TD align="center">05:03:30:18</TD>
+          <TD align="center">00:00:58:01</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ДИСПЕТЧЕР</TD>
+          <TD align="center">05:05:28:10</TD>
+          <TD align="center">05:06:39:17</TD>
+          <TD align="center">00:01:11:07</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ДИСПЕТЧЕР</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ДИСПЕТЧЕР</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ГЕНА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ГЕНА</TD>
+          <TD align="center">02:13:24:11</TD>
+          <TD align="center">02:13:26:18</TD>
+          <TD align="center">00:00:02:07</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ГЕНА</TD>
+          <TD align="center">04:12:16:07</TD>
+          <TD align="center">04:12:29:13</TD>
+          <TD align="center">00:00:13:06</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ГЕНА</TD>
+          <TD align="center">04:12:29:13</TD>
+          <TD align="center">04:14:53:04</TD>
+          <TD align="center">00:02:23:16</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ГЕНА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ГЕНА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ВИТЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ВИТЯ</TD>
+          <TD align="center">04:12:29:13</TD>
+          <TD align="center">04:14:53:04</TD>
+          <TD align="center">00:02:23:16</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ВИТЯ</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ВИТЯ</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ЛЕНА
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ЛЕНА</TD>
+          <TD align="center">04:12:29:13</TD>
+          <TD align="center">04:14:53:04</TD>
+          <TD align="center">00:02:23:16</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ЛЕНА</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ЛЕНА</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            ДЯДЯ
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ДЯДЯ ???</TD>
+          <TD align="center">04:16:05:11</TD>
+          <TD align="center">04:16:14:20</TD>
+          <TD align="center">00:00:09:09</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ДЯДЯ</TD>
+          <TD align="center">04:16:47:20</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">00:00:11:05</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            EP 1
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ОХРАННИК</TD>
+          <TD align="center">01:09:42:04</TD>
+          <TD align="center">01:09:50:24</TD>
+          <TD align="center">00:00:08:20</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">БАБКА</TD>
+          <TD align="center">01:11:38:09</TD>
+          <TD align="center">01:12:09:15</TD>
+          <TD align="center">00:00:31:06</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ПРОДАВЩИЦА</TD>
+          <TD align="center">01:13:40:13</TD>
+          <TD align="center">01:15:01:08</TD>
+          <TD align="center">00:01:20:20</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ЖЕНЩИНА</TD>
+          <TD align="center">02:13:47:17</TD>
+          <TD align="center">02:15:06:14</TD>
+          <TD align="center">00:01:18:22</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">МАЛЬЧИК</TD>
+          <TD align="center">03:15:55:06</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">00:00:49:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ДЕД МОРОЗ</TD>
+          <TD align="center">04:15:41:04</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">00:01:17:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">ФЕЛЬДШЕР 1</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">8</TD>
+          <TD align="left">ФЕЛЬДШЕР 1</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            EP 2
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ВОР ГОРОШКА</TD>
+          <TD align="center">01:14:46:21</TD>
+          <TD align="center">01:14:56:10</TD>
+          <TD align="center">00:00:09:14</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">ВОР ГОРОШКА</TD>
+          <TD align="center">01:15:22:04</TD>
+          <TD align="center">01:15:28:20</TD>
+          <TD align="center">00:00:06:16</TD>
+         </TR>
+         <TR>
+          <TD align="center">3</TD>
+          <TD align="left">ВОДИТЕЛЬ</TD>
+          <TD align="center">02:02:11:23</TD>
+          <TD align="center">02:02:43:24</TD>
+          <TD align="center">00:00:32:01</TD>
+         </TR>
+         <TR>
+          <TD align="center">4</TD>
+          <TD align="left">ПАПА</TD>
+          <TD align="center">03:15:55:06</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">00:00:49:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">5</TD>
+          <TD align="left">ПОЛИЦЕЙСКИЙ</TD>
+          <TD align="center">04:15:41:04</TD>
+          <TD align="center">04:16:59:00</TD>
+          <TD align="center">00:01:17:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">6</TD>
+          <TD align="left">ФЕЛЬДШЕР 2</TD>
+          <TD align="center">05:07:32:06</TD>
+          <TD align="center">05:09:17:21</TD>
+          <TD align="center">00:01:45:15</TD>
+         </TR>
+         <TR>
+          <TD align="center">7</TD>
+          <TD align="left">ФЕЛЬДШЕР 2</TD>
+          <TD align="center">05:10:03:15</TD>
+          <TD align="center">05:11:40:08</TD>
+          <TD align="center">00:01:36:18</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            EP 3
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ДЕВОЧКА</TD>
+          <TD align="center">03:15:55:06</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">00:00:49:05</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">064____01T003-07.A1</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">03:16:44:11</TD>
+          <TD align="center">00:00:00:00</TD>
+         </TR>
+        </TABLE>
+        <h2>
+            GUR 1
+        </h2>
+        <TABLE width="100%">
+          <COL width="2.5%">
+          <COL width="">
+          <COL width="5%">
+          <COL width="5%">
+          <COL width="5%">
+         <TR>
+          <TH>#</TH>
+          <TH>EVENT</TH>
+          <TH>START</TH>
+          <TH>END</TH>
+          <TH>DURATION</TH>
+         </TR>
+         <TR>
+          <TD align="center">1</TD>
+          <TD align="left">ДЯДЯ</TD>
+          <TD align="center">01:07:48:20</TD>
+          <TD align="center">01:08:06:16</TD>
+          <TD align="center">00:00:17:21</TD>
+         </TR>
+         <TR>
+          <TD align="center">2</TD>
+          <TD align="left">GUR</TD>
+          <TD align="center">02:02:11:23</TD>
+          <TD align="center">02:02:43:24</TD>
+          <TD align="center">00:00:32:01</TD>
+         </TR>
+        </TABLE>
+    </body>
+</html>

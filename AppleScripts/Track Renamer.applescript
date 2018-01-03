@@ -13,6 +13,7 @@
 -- http://github.com/fantopop
 -- 
 
+<<<<<<< HEAD
 set request to display dialog "Enter number of tracks to rename?" default answer "1" buttons {"Cancel", "OK"} default button "OK" cancel button "Cancel"
 set N to (text returned of request) as number
 
