@@ -98,7 +98,7 @@ Warning: Always backup files before renaming!
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
 
 ##  Session info to table converter
-[tracks_to_table.py](../master/Text%20session%20info%20to%20table/tracks_to_table.py) script converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.html` or `.csv` file. HTML is ready to print, and CSV could be easily edited in Numbers.app or Excel. Also an [macOS app](../master/Text%20session%20info%20to%20table/EDL-tools_macos_app.zip) with drag-n-drop support is provided.
+[tracks_to_table.py](../master/Session%20info%20to%20table/tracks_to_table.py) script converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.html` or `.csv` file. HTML is ready to print, and CSV could be easily edited in Numbers.app or Excel. Also an [macOS app](../master/Session%20info%20to%20table/EDL-tools_macos_app.zip) with drag-n-drop support is provided.
 
 #### macOS App
 <img src="https://www.dropbox.com/s/7hj4d6yj114xkt8/converter.png?raw=true" width="240">
