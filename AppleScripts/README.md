@@ -48,7 +48,7 @@ Renders the selection with frontmost or last frontmost Audiosuite plug-in.
 Creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
 ### Miscellaneous
 #### [Backup to playlist](Backup%20to%20playlist.applescript)
-Copies selection to the topmost alternate playlist. Make sure that the playlist exists and is empty at the selection, as the script will replace the selection in playlist.
+Copies selection to the first unoccupied alternate playlist. Please, be sure that there is one, the script wouldn't create the new playlist, if there are none available - it will paste the selection to the first onoccupied track.
 #### [Cut & Fades](Cut%20&%20Fades.applescript)
 Cuts selection and creates fades around it.
 #### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
