@@ -67,6 +67,30 @@ The dictionary can be updated, just maintain the given in the example format:
 * You can specify dictionary file with `-d DICT` option.
 * Use `-s` option to print out all replacements.
 
+##  Session info to table converter
+[tracks_to_table.py](../master/Session%20info%20to%20table/tracks_to_table.py) script converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.html` or `.csv` file. HTML is ready to print, and CSV could be easily edited in Numbers.app or Excel. Also an [macOS app](../master/Session%20info%20to%20table/EDL-tools_macos_app.zip) with drag-n-drop support is provided.
+
+> Note: it's recommended to print HTML file from Google Chrome browser.
+<img src="https://www.dropbox.com/s/3r6wli0fawqqje7/HTML-table.png?raw=true" width="600">
+
+#### macOS App
+<img src="https://www.dropbox.com/s/7hj4d6yj114xkt8/converter.png?raw=true" width="240">
+
+#### Script usage  
+```
+usage: tracks_to_table.py [-h] --to {csv,html} textfile
+
+Converts '.txt' file from Pro Tools 'Export Session Info as Text' command to
+'.csv' or '.html' file
+
+positional arguments:
+  textfile         session info text file from Pro Tools
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --to {csv,html}  export format: "csv" or "html"
+```
+
 ## rename_mixer_files.py
 Batch rename files from format:  
 ``` 05-5-160928_1009.wav```  
@@ -96,26 +120,3 @@ Warning: Always backup files before renaming!
 * Use `-r` option to rename files. Without this option changes are previewed only.
 
 It's strongly recommended to try the script without renaming, to preview what changes could be done.
-
-##  Session info to table converter
-[tracks_to_table.py](../master/Session%20info%20to%20table/tracks_to_table.py) script converts `.txt` file, that could be exported from Pro Tools using *Export Session Info as Text* command, into `.html` or `.csv` file. HTML is ready to print, and CSV could be easily edited in Numbers.app or Excel. Also an [macOS app](../master/Session%20info%20to%20table/EDL-tools_macos_app.zip) with drag-n-drop support is provided.
-
-> Note: it's recommended to print HTML file from Google Chrome browser.
-
-#### macOS App
-<img src="https://www.dropbox.com/s/7hj4d6yj114xkt8/converter.png?raw=true" width="240">
-
-#### Script usage  
-```
-usage: tracks_to_table.py [-h] --to {csv,html} textfile
-
-Converts '.txt' file from Pro Tools 'Export Session Info as Text' command to
-'.csv' or '.html' file
-
-positional arguments:
-  textfile         session info text file from Pro Tools
-
-optional arguments:
-  -h, --help       show this help message and exit
-  --to {csv,html}  export format: "csv" or "html"
-```
