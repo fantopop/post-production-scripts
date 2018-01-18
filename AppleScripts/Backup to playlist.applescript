@@ -43,7 +43,7 @@ tell application "Finder"
 			
 			set occupied to true
 			# Search for the first unoccupied playlist
-			repeat while occupied
+			repeat while occupied and (i is less than 100)
 				# Move selection down
 				keystroke ";"
 				
