@@ -85,7 +85,7 @@ class DropImageView: NSImageView {
         }
         
         let (exitCode, out) = runScript(fileName: path, format: format)
-        // Swift.print(exitCode)
+        Swift.print(exitCode)
         if (exitCode == 0) {
             Swift.print(out!)
             showNotification(title: "Tracks to Table", text: "File converted to \(format)")
