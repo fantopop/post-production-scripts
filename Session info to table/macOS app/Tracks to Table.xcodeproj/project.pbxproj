@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDD1F04F20115C5300C08571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F04E20115C5300C08571 /* AppDelegate.swift */; };
+		BDD1F05120115C5300C08571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F05020115C5300C08571 /* ViewController.swift */; };
+		BDD1F05320115C5300C08571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F05220115C5300C08571 /* Assets.xcassets */; };
+		BDD1F05620115C5300C08571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F05420115C5300C08571 /* Main.storyboard */; };
+		BDD1F05F20115D1000C08571 /* tracks_to_table.py in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F05E20115D1000C08571 /* tracks_to_table.py */; };
+		BDD1F06520116BB300C08571 /* txt.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F06420116BB300C08571 /* txt.png */; };
+		BDD1F06720116BBC00C08571 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F06620116BBC00C08571 /* square.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDD1F04B20115C5300C08571 /* Tracks to Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tracks to Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD1F04E20115C5300C08571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDD1F05020115C5300C08571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDD1F05220115C5300C08571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD1F05520115C5300C08571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDD1F05720115C5300C08571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD1F05820115C5300C08571 /* Tracks_to_Table.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracks_to_Table.entitlements; sourceTree = "<group>"; };
+		BDD1F05E20115D1000C08571 /* tracks_to_table.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tracks_to_table.py; sourceTree = "<group>"; };
+		BDD1F06420116BB300C08571 /* txt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txt.png; sourceTree = "<group>"; };
+		BDD1F06620116BBC00C08571 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD1F04820115C5300C08571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDD1F04220115C5300C08571 = {
+			isa = PBXGroup;
+			children = (
+				BDD1F04D20115C5300C08571 /* Tracks to Table */,
+				BDD1F04C20115C5300C08571 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD1F04C20115C5300C08571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD1F04B20115C5300C08571 /* Tracks to Table.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD1F04D20115C5300C08571 /* Tracks to Table */ = {
+			isa = PBXGroup;
+			children = (
+				BDD1F04E20115C5300C08571 /* AppDelegate.swift */,
+				BDD1F05020115C5300C08571 /* ViewController.swift */,
+				BDD1F05220115C5300C08571 /* Assets.xcassets */,
+				BDD1F05420115C5300C08571 /* Main.storyboard */,
+				BDD1F05720115C5300C08571 /* Info.plist */,
+				BDD1F05820115C5300C08571 /* Tracks_to_Table.entitlements */,
+				BDD1F05E20115D1000C08571 /* tracks_to_table.py */,
+				BDD1F06420116BB300C08571 /* txt.png */,
+				BDD1F06620116BBC00C08571 /* square.png */,
+			);
+			path = "Tracks to Table";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD1F04A20115C5300C08571 /* Tracks to Table */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD1F05B20115C5300C08571 /* Build configuration list for PBXNativeTarget "Tracks to Table" */;
+			buildPhases = (
+				BDD1F04720115C5300C08571 /* Sources */,
+				BDD1F04820115C5300C08571 /* Frameworks */,
+				BDD1F04920115C5300C08571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tracks to Table";
+			productName = "Tracks to Table";
+			productReference = BDD1F04B20115C5300C08571 /* Tracks to Table.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD1F04320115C5300C08571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Ilya Putilin";
+				TargetAttributes = {
+					BDD1F04A20115C5300C08571 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BDD1F04620115C5300C08571 /* Build configuration list for PBXProject "Tracks to Table" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD1F04220115C5300C08571;
+			productRefGroup = BDD1F04C20115C5300C08571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD1F04A20115C5300C08571 /* Tracks to Table */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD1F04920115C5300C08571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD1F05F20115D1000C08571 /* tracks_to_table.py in Resources */,
+				BDD1F06520116BB300C08571 /* txt.png in Resources */,
+				BDD1F05320115C5300C08571 /* Assets.xcassets in Resources */,
+				BDD1F05620115C5300C08571 /* Main.storyboard in Resources */,
+				BDD1F06720116BBC00C08571 /* square.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD1F04720115C5300C08571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD1F05120115C5300C08571 /* ViewController.swift in Sources */,
+				BDD1F04F20115C5300C08571 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDD1F05420115C5300C08571 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD1F05520115C5300C08571 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDD1F05920115C5300C08571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDD1F05A20115C5300C08571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		BDD1F05C20115C5300C08571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Tracks to Table/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantopop.Tracks-to-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BDD1F05D20115C5300C08571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Tracks to Table/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantopop.Tracks-to-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD1F04620115C5300C08571 /* Build configuration list for PBXProject "Tracks to Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD1F05920115C5300C08571 /* Debug */,
+				BDD1F05A20115C5300C08571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD1F05B20115C5300C08571 /* Build configuration list for PBXNativeTarget "Tracks to Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD1F05C20115C5300C08571 /* Debug */,
+				BDD1F05D20115C5300C08571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD1F04320115C5300C08571 /* Project object */;
+}
