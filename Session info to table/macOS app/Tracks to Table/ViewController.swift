@@ -15,7 +15,15 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         htmlButton.toolTip = "Ready to print"
         csvButton.toolTip = "Easy to edit"
+        view.window?.makeKey()
     }
+    
+    /*
+    // Make the app window always on top
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        view.window?.level = .floating
+    }*/
     
     override var representedObject: Any? {
         didSet {

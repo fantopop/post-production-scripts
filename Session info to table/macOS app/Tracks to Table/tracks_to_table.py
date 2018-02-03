@@ -449,7 +449,7 @@ class Session():
                 # Skip original header lines.
                 if row[0].startswith('CHANNEL'):
                     continue
-                if len(row) > 2:
+                if len(row) > 6:
                     track.events.append(row[1:6])
 
 
