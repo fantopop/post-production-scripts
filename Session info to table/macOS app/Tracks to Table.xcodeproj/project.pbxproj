@@ -286,6 +286,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tracks to Table/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantopop.Tracks-to-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -303,6 +304,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tracks to Table/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantopop.Tracks-to-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
