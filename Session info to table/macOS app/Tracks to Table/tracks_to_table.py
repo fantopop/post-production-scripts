@@ -1,5 +1,13 @@
 #!/usr/bin/python
 """
+tracks_to_table.py
+
+Author: Ilya Putilin
+https://github.com/fantopop/post-production-scripts
+
+Special thanks to Philippe Lagadec for HTML.py module for generating HTML tables.
+http://www.decalage.info/python/html
+
 This scripts converts .txt file, that could be exported from Pro Tools
 using "Export Session Info as Text" command into .csv file.
 This CSV file can be easily opened with Number app.
@@ -20,95 +28,6 @@ footer = [''] * 5
 # TABLE_STYLE_THINBORDER = "border: 1px solid #000000; border-collapse: collapse;"
 TABLE_STYLE_THINBORDER = ""
 table_style = 'table {border-collapse: collapse;} th, td {border: 1px solid #ccc;padding: 8px;}'
-
-
-#!/usr/bin/python
-# -*- coding: iso-8859-1 -*-
-"""
-HTML.py - v0.04 2009-07-28 Philippe Lagadec
-
-This module provides a few classes to easily generate HTML code such as tables
-and lists.
-
-Project website: http://www.decalage.info/python/html
-
-License: CeCILL (open-source GPL compatible), see source code for details.
-         http://www.cecill.info
-"""
-
-__version__ = '0.04'
-__date__    = '2009-07-28'
-__author__  = 'Philippe Lagadec'
-
-#--- LICENSE ------------------------------------------------------------------
-
-# Copyright Philippe Lagadec - see http://www.decalage.info/contact for contact info
-#
-# This module provides a few classes to easily generate HTML tables and lists.
-#
-# This software is governed by the CeCILL license under French law and
-# abiding by the rules of distribution of free software.  You can  use,
-# modify and/or redistribute the software under the terms of the CeCILL
-# license as circulated by CEA, CNRS and INRIA at the following URL
-# "http://www.cecill.info".
-#
-# A copy of the CeCILL license is also provided in these attached files:
-# Licence_CeCILL_V2-en.html and Licence_CeCILL_V2-fr.html
-#
-# As a counterpart to the access to the source code and  rights to copy,
-# modify and redistribute granted by the license, users are provided only
-# with a limited warranty  and the software's author, the holder of the
-# economic rights, and the successive licensors have only limited
-# liability.
-#
-# In this respect, the user's attention is drawn to the risks associated
-# with loading,  using,  modifying and/or developing or reproducing the
-# software by the user in light of its specific status of free software,
-# that may mean  that it is complicated to manipulate,  and  that  also
-# therefore means  that it is reserved for developers  and  experienced
-# professionals having in-depth computer knowledge. Users are therefore
-# encouraged to load and test the software's suitability as regards their
-# requirements in conditions enabling the security of their systems and/or
-# data to be ensured and,  more generally, to use and operate it in the
-# same conditions as regards security.
-#
-# The fact that you are presently reading this means that you have had
-# knowledge of the CeCILL license and that you accept its terms.
-
-
-#--- CHANGES ------------------------------------------------------------------
-
-# 2008-10-06 v0.01 PL: - First version
-# 2008-10-13 v0.02 PL: - added cellspacing and cellpadding to table
-#                      - added functions to ease one-step creation of tables
-#                        and lists
-# 2009-07-21 v0.03 PL: - added column attributes and styles (first attempt)
-#                        (thanks to an idea submitted by Michal Cernoevic)
-# 2009-07-28 v0.04 PL: - improved column styles, workaround for Mozilla
-
-
-#-------------------------------------------------------------------------------
-#TODO:
-# - method to return a generator (yield each row) instead of a single string
-# - unicode support (input and output)
-# - escape text in cells (optional)
-# - constants for standard colors
-# - use lxml to generate well-formed HTML ?
-# - add classes/functions to generate a HTML page, paragraphs, headings, etc...
-
-
-#--- THANKS --------------------------------------------------------------------
-
-# - Michal Cernoevic, for the idea of column styles.
-
-#--- REFERENCES ----------------------------------------------------------------
-
-# HTML 4.01 specs: http://www.w3.org/TR/html4/struct/tables.html
-
-# Colors: http://www.w3.org/TR/html4/types.html#type-color
-
-# Columns alignement and style, one of the oldest and trickiest bugs in Mozilla:
-# https://bugzilla.mozilla.org/show_bug.cgi?id=915
 
 
 #--- CONSTANTS -----------------------------------------------------------------

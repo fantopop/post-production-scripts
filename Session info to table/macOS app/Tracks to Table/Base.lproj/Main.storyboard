@@ -707,11 +707,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Tracks_to_Table" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-fJ-LxR">
-                                <rect key="frame" x="53" y="62" width="141" height="17"/>
+                                <rect key="frame" x="60" y="66" width="141" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Choose output format:" id="1yy-BA-5Kt">
                                     <font key="font" metaFont="system"/>
@@ -720,12 +720,12 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sf-wC-IQ6">
-                                <rect key="frame" x="73" y="91" width="100" height="100"/>
+                                <rect key="frame" x="80" y="95" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="txt" id="R0q-XK-p9n"/>
                             </imageView>
                             <button toolTip="Ready to print" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSW-E9-Kfv">
-                                <rect key="frame" x="99" y="37" width="49" height="18"/>
+                                <rect key="frame" x="106" y="41" width="49" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="radio" title="html" bezelStyle="regularSquare" imagePosition="left" alignment="left" refusesFirstResponder="YES" state="on" inset="2" id="IJM-uc-uAq">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -736,7 +736,7 @@
                                 </connections>
                             </button>
                             <button toolTip="Easy to edit" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-Gu-NC1">
-                                <rect key="frame" x="99" y="15" width="43" height="18"/>
+                                <rect key="frame" x="106" y="19" width="43" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="radio" title="csv" bezelStyle="regularSquare" imagePosition="left" alignment="left" refusesFirstResponder="YES" inset="2" id="Tdx-WN-Zj9">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -747,7 +747,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-dv-YP1">
-                                <rect key="frame" x="77" y="186" width="86" height="17"/>
+                                <rect key="frame" x="84" y="190" width="86" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Drag file here" id="AHR-Kx-bOF">
                                     <font key="font" metaFont="system"/>
@@ -756,7 +756,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgO-dx-xCt" customClass="DropImageView" customModule="Tracks_to_Table" customModuleProvider="target">
-                                <rect key="frame" x="33" y="83" width="180" height="140"/>
+                                <rect key="frame" x="40" y="87" width="180" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="square" id="pjH-SH-c6V"/>
                                 <connections>
@@ -764,10 +764,22 @@
                                     <outlet property="htmlButton" destination="fSW-E9-Kfv" id="hVe-Fk-Bui"/>
                                 </connections>
                             </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQI-By-G30">
+                                <rect key="frame" x="103" y="232" width="55" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="donate" bezelStyle="rounded" alignment="center" controlSize="mini" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J6X-sW-nQd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <connections>
+                                        <action selector="clickDonateButton:" target="XfG-lQ-9wD" id="RL1-sF-zvD"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="csvButton" destination="wkg-Gu-NC1" id="LhV-vM-GvL"/>
+                        <outlet property="donateButton" destination="kQI-By-G30" id="aVg-4R-O6e"/>
                         <outlet property="htmlButton" destination="fSW-E9-Kfv" id="djT-FU-jOD"/>
                     </connections>
                 </viewController>

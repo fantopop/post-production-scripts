@@ -35,7 +35,11 @@ class ViewController: NSViewController {
     @IBOutlet weak var csvButton: NSButton!
     @IBAction func radioButtonChanged(_ sender: NSButton) {
     }
+    @IBOutlet weak var donateButton: NSButton!
     
+    @IBAction func clickDonateButton(_ sender: NSButton) {
+        NSWorkspace.shared.open(NSURL(string: "http://paypal.me/fantopop/2usd")! as URL)
+    }
 }
 
 class DropImageView: NSImageView {
@@ -154,4 +158,3 @@ func showNotification(title: String, text: String) {
     
     notificationCenter.deliver(notification)
 }
-

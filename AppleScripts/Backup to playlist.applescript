@@ -49,7 +49,7 @@ tell application "Finder"
 				
 				# Check if the menu item Clip/Rename... is enabled.
 				# If no clips are present in the selection, this item won't be enabled.
-				set occupied to enabled of menu item "Rename..." of menu "Clip" of menu bar item "Clip" of menu bar 1
+				set occupied to enabled of menu item "Clear Clip Gain" of menu "Clear Special" of menu item "Clear Special" of menu "Edit" of menu bar item "Edit" of menu bar 1
 				
 				# Increment counter of skipped playlists
 				set i to (i + 1)
