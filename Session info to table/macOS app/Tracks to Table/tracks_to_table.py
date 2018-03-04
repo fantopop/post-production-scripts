@@ -454,7 +454,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Converts '.txt' file from Pro Tools 'Export Session Info as Text' command to '.csv' or '.html' file")
     parser.add_argument(
-        'txt', metavar='textfile', type=argparse.FileType(mode='r'),
+        'txt', metavar='textfile', type=argparse.FileType(mode='rU'),
         help='session info text file from Pro Tools')
     parser.add_argument(
         '--to', choices=['csv', 'html'], required=True,
