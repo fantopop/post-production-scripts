@@ -30,6 +30,13 @@ These scripts are currently configured to work with iZotope RX 6. Replace all oc
 Opens iZotope RX Connect plug-in window if needed and sends selection to iZotope RX Audio Editor. For some reason this script doesn't work with FastScripts, so it's the only one that I've installed as Service.
 #### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
+### Smart tool
+#### [Switch Trim Tool](Switch%20Trim%20Tool.aplescript)
+Switches between Standard and Time Compression/Expansion Trim Tools leaving Smart Tool enabled.  
+From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/42ks7qajq2oy2l1/trim_tool_tce.png?raw=true" heigth="25"> and back.
+#### [Switch Grabber Tool](Switch%20Trim%20Tool.aplescript)
+Switches between Smart Tool with Grabber Tool (Separation) and Grabber Tool (Object).  
+From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/gadfh62fgxqtmai/grabber_tool_object.png?raw=true" heigth="25"> and back.
 ### SoundRadix Auto-Align
 Two sripts to reduce amount of clicking on different buttons and windows while working with [SoundRadix Auto-Align](https://www.soundradix.com/products/auto-align/) plug-in. Both windows of Auto-Align are considered to be open.
 #### [Auto-Align Detect](Auto-Align%20Detect.applescript)
@@ -41,8 +48,10 @@ Performs these actions at once:
 3. Render selection with these settings.
 4. Wait for render to complete and create fades around the selection.
 5. Bring track insert window back to front.
+#### [Auto-Align Nudge](Auto-Align%20Nudge.applescript)
+Reades delay in an open Auto-Align window and nudges selected clips by this number of __samples__. Be carefull, as Pro Tools can't nudge the clip if the are no handles, for example the clip is processed by an AudioSuite plug-in. In this case, process the clip(s) using [Auto-Align](Auto-Align.applescript) script.
 ### Render
-Renders the selection with frontmost or last frontmost Audiosuite plug-in. 
+Renders the selection with frontmost or last frontmost AudioSuite plug-in. 
 #### [Render](Render.applescript)
 #### [Render & Fades](Render%20&%20Fades.applescript)
 Creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
