@@ -9,11 +9,11 @@
 -- Folowing tracks will be renamed to: PREFIX1, PREFIX2 ...
 -- Track rename window is left open, so you can enter prefix for the next batch of tracks and run the script again.
 --
--- © 2017 Ilya Putilin
+-- (C) 2017 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 
-<<<<<<< HEAD
+
 set request to display dialog "Enter number of tracks to rename?" default answer "1" buttons {"Cancel", "OK"} default button "OK" cancel button "Cancel"
 set N to (text returned of request) as number
 
