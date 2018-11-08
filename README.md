@@ -6,7 +6,7 @@ Collection of AppleScripts and Python (compatible with Python2.7 and Python3.x) 
 - [Session info to table converter](#session-info-to-table-converter)  
 
 ## AppleScripts for Pro Tools.
-Scripts for Pro Tools to enhance workflow and speed-up our daily work. See details in [README.md](AppleScripts/README.md) file in corresponding folder.
+Scripts for Avid Pro Tools to enhance workflow and speed-up our daily work. See details in [README.md](AppleScripts/README.md) file in corresponding folder.
 * Automation
   - Enable Automation Preview mode
   - Punch Automation Preview
