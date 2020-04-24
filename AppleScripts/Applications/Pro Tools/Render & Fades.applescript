@@ -6,7 +6,7 @@
 -- 2. Waits for render to complete.
 -- 3. Creates fades around the selection.
 --
--- © 2017 Ilya Putilin
+-- (C) 2020 Ilya Putilin
 -- http://github.com/fantopop
 -- 
 

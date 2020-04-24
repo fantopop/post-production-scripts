@@ -9,6 +9,8 @@
 # http://github.com/fantopop
 # 
 
+set max_tries to 15
+
 tell application "Finder"
 	tell application "System Events"
 		set PT to the first application process whose creator type is "PTul"
@@ -43,13 +45,13 @@ tell application "Finder"
 			
 			set occupied to true
 			# Search for the first unoccupied playlist
-			repeat while occupied and (i is less than 100)
+			repeat while occupied and (i is less than max_tries)
 				# Move selection down
 				keystroke ";"
 				
 				# Check if the menu item Clip/Rename... is enabled.
 				# If no clips are present in the selection, this item won't be enabled.
-				set occupied to enabled of menu item "Clear Clip Gain" of menu "Clear Special" of menu item "Clear Special" of menu "Edit" of menu bar item "Edit" of menu bar 1
+				set occupied to enabled of menu item "Clip Gain" of menu "Clear Special" of menu item "Clear Special" of menu "Edit" of menu bar item "Edit" of menu bar 1
 				
 				# Increment counter of skipped playlists
 				set i to (i + 1)

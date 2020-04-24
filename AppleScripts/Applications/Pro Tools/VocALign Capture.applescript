@@ -2,13 +2,7 @@
 -- AppleScripts for Avid Pro Tools.
 --
 -- Script description:
--- 1. Copies settings from Auto-Align plug-in in the track.
--- 2. Pastes settings to AudioSuite Auto-Align plug-in.
--- 3. Renders selection with Auto-Align.
--- 4. Creates fades around the selection.
--- 5. Brings track plug-in back to front.
--- 
--- Both intanses of Auto-Align need to be open in prior.
+-- Open VocALign window (if needed) and captures selection.
 --
 -- (C) 2017 Ilya Putilin
 -- http://github.com/fantopop
@@ -25,7 +19,7 @@ tell application "Finder"
 			set isOpen to count (windows whose name contains "Audio Suite: VocALign")
 			
 			-- Open plug-in if needed.
-			if isOpen < 1 then
+			if isOpen is 0 then
 				# display dialog "Can't find VocALign plug-in window." buttons {"OK"} default button {"OK"} with icon caution with title "AppleScript error"
 				# return
 				click menu item "VocALign Project" of menu "Other" of menu item "Other" of menu "AudioSuite" of menu bar item "AudioSuite" of menu bar 1
