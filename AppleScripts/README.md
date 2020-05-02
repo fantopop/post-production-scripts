@@ -20,50 +20,50 @@ If you don't like scripts, check [Soundflow](https://soundflow.org) or [Keyboard
 ## Scripts
 ### Automation
 A group of scripts for accessing Automation Window buttons. All scripts also work with a closed Automation Window, in this case it leaves it closed after performing an action.
-#### [Enable Automation Preview mode](Auto%20Preview.applescript)
-#### [Punch Automation Preview](Auto%20Punch%20Preview.applescript)
-#### [Suspend Automation](Auto%20Suspend.applescript)
-#### [Write Automation to Selection](Auto%20Write%20to%20Selection.applescript)
+#### [Enable Automation Preview mode](Applications/Pro%20Tools/Auto%20Preview.applescript)
+#### [Punch Automation Preview](Applications/Pro%20Tools/Auto%20Punch%20Preview.applescript)
+#### [Suspend Automation](Applications/Pro%20Tools/Auto%20Suspend.applescript)
+#### [Write Automation to Selection](Applications/Pro%20Tools/Auto%20Write%20to%20Selection.applescript)
 ### iZotope RX
 These scripts are currently configured to work with iZotope RX 6. Replace all occurrences of 6 with 5 to work with an older version of RX.
-#### [Send to iZotope RX Audio Editor](Send%20to%20RX.applescript)
+#### [Send to iZotope RX Audio Editor](Applications/Pro%20Tools/Send%20to%20RX.applescript)
 Opens iZotope RX Connect plug-in window if needed and sends selection to iZotope RX Audio Editor. For some reason this script doesn't work with FastScripts, so it's the only one that I've installed as Service.
-#### [Send from iZotope back to Pro Tools](Back%20to%20Pro%20Tools.applescript)
+#### [Send from iZotope back to Pro Tools](Applications/iZotope%20RX%207/Back%20to%20Pro%20Tools.applescript)
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
 ### Smart tool
-#### [Switch Trim Tool](Switch%20Trim%20Tool.aplescript)
+#### [Switch Trim Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.aplescript)
 Switches between Standard and Time Compression/Expansion Trim Tools leaving Smart Tool enabled.  
 From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/42ks7qajq2oy2l1/trim_tool_tce.png?raw=true" heigth="25"> and back.
-#### [Switch Grabber Tool](Switch%20Trim%20Tool.aplescript)
+#### [Switch Grabber Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.aplescript)
 Switches between Smart Tool with Grabber Tool (Separation) and Grabber Tool (Object).  
 From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/gadfh62fgxqtmai/grabber_tool_object.png?raw=true" heigth="25"> and back.
 ### SoundRadix Auto-Align
 Two sripts to reduce amount of clicking on different buttons and windows while working with [SoundRadix Auto-Align](https://www.soundradix.com/products/auto-align/) plug-in. Both windows of Auto-Align are considered to be open.
-#### [Auto-Align Detect](Auto-Align%20Detect.applescript)
+#### [Auto-Align Detect](Applications/Pro%20Tools/Auto-Align%20Detect.applescript)
 Toggles "Detect" state of currently open Auto-Align track insert.
-#### [Auto-Align](Auto-Align.applescript)
+#### [Auto-Align](Applications/Pro%20Tools/Auto-Align.applescript)
 Performs these actions at once:
 1. Copy current settings of the Auto-Align track insert.
 2. Paste these settings to an open AudioSuite Auto-Align plug-in.
 3. Render selection with these settings.
 4. Wait for render to complete and create fades around the selection.
 5. Bring track insert window back to front.
-#### [Auto-Align Nudge](Auto-Align%20Nudge.applescript)
+#### [Auto-Align Nudge](Applications/Pro%20Tools/Auto-Align%20Nudge.applescript)
 Reades delay in an open Auto-Align window and nudges selected clips by this number of __samples__. Be carefull, as Pro Tools can't nudge the clip if the are no handles, for example the clip is processed by an AudioSuite plug-in. In this case, process the clip(s) using [Auto-Align](Auto-Align.applescript) script.
 ### Render
 Renders the selection with frontmost or last frontmost AudioSuite plug-in. 
-#### [Render](Render.applescript)
-#### [Render & Fades](Render%20&%20Fades.applescript)
+#### [Render](Applications/Pro%20Tools/Render.applescript)
+#### [Render & Fades](Applications/Pro%20Tools/Render%20&%20Fades.applescript)
 Creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
 ### Miscellaneous
-#### [Backup to playlist](Backup%20to%20playlist.applescript)
+#### [Backup to playlist](Applications/Pro%20Tools/Backup%20to%20playlist.applescript)
 Copies selection to the first unoccupied alternate playlist. Please, be sure that there is one, the script wouldn't create the new playlist, if there are none available - it will paste the selection to the first onoccupied track.
-#### [Cut & Fades](Cut%20&%20Fades.applescript)
+#### [Cut & Fades](Applications/Pro%20Tools/Cut%20&%20Fades.applescript)
 Cuts selection and creates fades around it.
-#### [Toggle Inserts A-E panel](Inserts%20A-E.applescript)
-#### [Strip Silence & Fades](Strip%20Silence.applescript)
+#### [Toggle Inserts A-E panel](Applications/Pro%20Tools/Inserts%20A-E.applescript)
+#### [Strip Silence & Fades](Applications/Pro%20Tools/Strip%20Silence.applescript)
 Strips silence with current settings. It's handy to run script without opening Strip Silence window, in this case the script will close the window at the end. This script is intended to work with long narrative tracks recorded with similar gain for the whole track. You can adjust Strip Silence settings once and then use it in place with one keystroke.
-#### [Track Renamer](Track%20Renamer.applescript)
+#### [Track Renamer](Applications/Pro%20Tools/Track%20Renamer.applescript)
 Renames number of tracks, giving them sequential names. Usage:
 
 1. Open track rename window and enter `PREFIX` for new track names in the `Name the track` field.
