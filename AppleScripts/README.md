@@ -31,10 +31,10 @@ Opens iZotope RX Connect plug-in window if needed and sends selection to iZotope
 #### [Send from iZotope back to Pro Tools](Applications/iZotope%20RX%207/Back%20to%20Pro%20Tools.applescript)
 Sends audio back from iZotope RX Audio Editor to Pro Tools, renders the selection and creates fades around the selection when render completes (2 nudge values to the left, 1 nudge value to the right).
 ### Smart tool
-#### [Switch Trim Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.aplescript)
+#### [Switch Trim Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.applescript)
 Switches between Standard and Time Compression/Expansion Trim Tools leaving Smart Tool enabled.  
 From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/42ks7qajq2oy2l1/trim_tool_tce.png?raw=true" heigth="25"> and back.
-#### [Switch Grabber Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.aplescript)
+#### [Switch Grabber Tool](Applications/Pro%20Tools/Switch%20Trim%20Tool.applescript)
 Switches between Smart Tool with Grabber Tool (Separation) and Grabber Tool (Object).  
 From <img src="https://www.dropbox.com/s/z65q9mhafixgyr3/smart_tool.png?raw=true" heigth="25"> to <img src="https://www.dropbox.com/s/gadfh62fgxqtmai/grabber_tool_object.png?raw=true" heigth="25"> and back.
 ### SoundRadix Auto-Align
