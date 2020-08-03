@@ -17,7 +17,7 @@ tell application "Finder"
 			
 			set EditWindow to first window whose name contains "Edit:"
 			set CursorToolCluster to first group of EditWindow whose name contains "Cursor Tool CLuster"
-			set TCE to (count (buttons of CursorToolCluster whose name contains "Time Compression/Expansion"))
+			set TCE to (count (buttons of CursorToolCluster whose name contains "Time Compression/Expansion")) * 2
 			set TrimButton to (first button of CursorToolCluster whose name contains "Trim")
 			set SmartTool to (first button of CursorToolCluster whose name contains "Smart")
 			
