@@ -2,7 +2,9 @@
 -- AppleScripts for Avid Pro Tools.
 --
 -- Script description:
--- Switches to Composite View and back 
+-- 1. Sends audio back to Pro Tools.
+-- 2. Renders the selection.
+-- 3. Creates fades around the selection.
 --
 -- (C) 2020 Ilya Putilin
 -- http://github.com/fantopop
